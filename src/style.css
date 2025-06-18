@@ -83,8 +83,17 @@ Medium:
   --fs-500: 2.4rem;
   --fs-600: 3.6rem;
   --fs-700: 4.4rem;
+  --fs-750: 5.2rem;
   --fs-800: 6.2rem;
+  --fs-850: 7.4rem;
   --fs-900: 8.6rem;
+
+  --fs-nav-link: var(--fs-400);
+  --fs-body: var(--fs-400);
+  --fs-xlg: var(--fs-900);
+  --fs-lg: var(--fs-800);
+  --fs-md: var(--fs-750);
+  --fs-reg: var(--fs-600);
 
   /* spacing system */
   --spacing-50: 0.4rem;
@@ -99,6 +108,27 @@ Medium:
   --spacing-700: 8rem;
   --spacing-800: 9.6rem;
   --spacing-900: 12.8rem;
+
+  --padding-block-sm: var(--spacing-300);
+  --padding-block-md: var(--spacing-500);
+  --padding-block-lg: var(--spacing-600);
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --fs-nav-link: var(--fs-300);
+    --fs-xlg: var(--fs-850);
+    --fs-lg: var(--fs-750);
+    --fs-md: var(--fs-700);
+
+    --padding-block-sm: var(--spacing-200);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-body: var(--fs-300);
+  }
 }
 
 *,
@@ -266,12 +296,32 @@ h6 {
   font-weight: var(--fw-bold);
 }
 
-.padding-block-600 {
-  padding-block: var(--spacing-600);
+.padding-block-sm {
+  padding-block: var(--padding-block-sm);
 }
 
-.mb-300 {
+.padding-block-md {
+  padding-block: var(--padding-block-md);
+}
+
+.padding-block-lg {
+  padding-block: var(--padding-block-lg);
+}
+
+.mb-reg {
   margin-bottom: var(--spacing-300);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-500);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-700);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* layout utility */
@@ -288,6 +338,12 @@ h6 {
   --max-width: 144rem;
 }
 
+@media (max-width: 1600px) {
+  .wide {
+    --max-width: 130rem;
+  }
+}
+
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -298,17 +354,16 @@ h6 {
 
 body {
   font-family: var(--ff-body);
-  font-size: var(--fs-400);
+  font-size: var(--fs-body);
   color: var(--clr-neutral-700);
 }
 
 /* HEADER */
 
 .main-header {
-  padding-block: var(--spacing-300);
 }
 
-.header-box {
+.header-wrapper {
   display: flex;
   align-items: center;
 }
@@ -319,6 +374,12 @@ body {
 
 .logo {
   width: 16rem;
+}
+
+@media (max-width: 1600px) {
+  .logo {
+    width: 13rem;
+  }
 }
 
 .main-nav {
@@ -335,6 +396,7 @@ body {
 .nav-link:visited {
   text-decoration: none;
   color: var(--clr-primary-400);
+  font-size: var(--fs-nav-link);
   font-weight: var(--fw-semibold);
   text-transform: uppercase;
   line-height: 1;
@@ -405,8 +467,8 @@ body {
 /* HERO SECTION */
 
 .section-hero {
-  height: calc(100vh - 16.8rem);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/hero.jpg);
+  height: calc(100svh - 16.8rem);
+  background: linear-gradient(to top, rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(/images/hero.jpg);
   background-size: cover;
   background-position: center;
 
@@ -414,55 +476,73 @@ body {
   place-items: center;
 }
 
-.hero-text-box {
+@media (max-width: 1600px) {
+  .section-hero {
+    height: calc(100svh - 13rem);
+  }
+}
+
+.hero-wrapper {
   text-align: center;
 }
 
 /* TYPOGRAPHY */
 
 .heading-primary {
-  font-size: var(--fs-900);
+  font-size: var(--fs-xlg);
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-regular);
   line-height: 1.2;
   letter-spacing: 1.4px;
-  margin-bottom: var(--spacing-500);
 }
 
 .subheading {
-  font-size: 4.4rem;
+  font-size: var(--fs-md);
   font-weight: var(--fw-regular);
   letter-spacing: 1px;
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
-  line-height: 1.2;
-  margin-bottom: 8rem;
+  line-height: 1;
 }
 
 .heading-secondary {
   font-family: var(--ff-heading);
-  font-size: var(--fs-700);
+  font-size: var(--fs-lg);
   font-weight: var(--fw-regular);
+}
+
+.action {
+  font-family: var(--ff-body);
+  font-size: var(--fs-reg);
 }
 
 /* CARD */
 
 .card {
+  cursor: pointer;
   height: 32.5rem;
   background-size: cover;
   background-position: center;
   border-radius: var(--spacing-100);
+
+  font-family: var(--ff-heading);
+  font-size: var(--fs-md);
+  line-height: 1;
+
+  padding-inline: var(--spacing-500);
+  display: flex;
+  align-items: center;
 }
 
 .card--1 {
-  background-image: url(/images/sneakers.jpg);
+  background-image: linear-gradient(rgba(64, 90, 109, 0.5), rgba(64, 90, 109, 0.5)), url(/images/sneakers.jpg);
 }
 
 .card--2 {
-  background-image: url(/images/baby-sleeping.jpg);
+  background-image: linear-gradient(rgba(236, 183, 179, 0.5), rgba(236, 183, 179, 0.5)), url(/images/baby-sleeping.jpg);
 }
 
 .card--3 {
-  background-image: url(/images/baby-standing.jpg);
+  background-image: linear-gradient(rgba(64, 90, 109, 0.5), rgba(64, 90, 109, 0.5)), url(/images/baby-standing.jpg);
 }
