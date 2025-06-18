@@ -22,6 +22,14 @@ Large: 1.8
 
 --- 02 COLORS
 
+
+#ecb7b3;
+?
+#f5f5f5
+#e0dad1
+
+
+
 - Primary:
 
 Tints (lightest to darkest):
@@ -56,6 +64,22 @@ Medium:
 */
 
 :root {
+  --clr-primary-400: #405a6d;
+
+  --clr-accent-1-400: #f4ddd5;
+  --clr-accent-2-400: #a4bbac;
+
+  --clr-neutral-100: #fff;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 }
 
 *,
