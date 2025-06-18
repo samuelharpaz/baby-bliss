@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,34 +18,36 @@
 
     <link rel="stylesheet" href="src/style.css" />
 
-    <title>Baby Bliss by Naava</title>
+    <title>Baby Bliss by Naava - Learn effective baby sleep solutions</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="header-container">
-        <a href="/index.html" class="logo-link"><img src="images/logo.png" alt="Baby Bliss logo" class="logo" /></a>
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link current" href="/index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">My faves</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <a class="btn btn-accent-1" href="#">Book consultation</a>
+      <div class="container wide">
+        <div class="header-box">
+          <a href="/index.html" class="logo-link"><img src="/images/logo.png" alt="Baby Bliss logo" class="logo" /></a>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link current" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">My faves</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="btn btn-accent-primary" href="#">Book consultation</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="section-hero">
-        <div class="hero-text-box">
+        <div class="hero-text-box container">
           <h1 class="heading-primary">
             Better Sleep, Happier Days <br />
             for Baby & You
           </h1>
-          <h3 class="heading-tertiary">Gentle sleep training with lasting results</h3>
-          <a class="btn btn-primary" href="#">
+          <p class="subheading">Gentle sleep training with lasting results</p>
+          <a class="btn" href="#">
             <p class="btn-text">
               <span>Book your call today</span>
               <svg
@@ -59,6 +66,31 @@
               </svg>
             </p>
           </a>
+        </div>
+      </section>
+
+      <section class="section-stages padding-block-600">
+        <div class="container">
+          <h2 class="heading-secondary text-primary-400 mb-300">Sleep solutions for every stage</h2>
+          <p>
+            My classes provide personalized guidance, teaching you how to create gentle sleep routines and structured
+            days.
+          </p>
+          <p class="choose mb-300">Choose your baby’s age to start their sleep solution.</p>
+          <div class="grid-3-cols">
+            <div class="card card--1">
+              <h3>Pre-birth preparation</h3>
+              <a href="#" class="btn btn-accent-secondary">Learn more</a>
+            </div>
+            <div class="card card--2">
+              <h3>Newborn</h3>
+              <a href="#" class="btn btn-accent-secondary">Learn more</a>
+            </div>
+            <div class="card card--3">
+              <h3>Baby</h3>
+              <a href="#" class="btn btn-accent-secondary">Learn more</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
