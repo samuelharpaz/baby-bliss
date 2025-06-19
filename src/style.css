@@ -22,7 +22,7 @@ body {
 
 .main-nav {
   margin-right: auto;
-  margin-left: var(--spacing-800);
+  margin-left: var(--spacing-900);
 }
 
 .nav-list {
@@ -119,7 +119,8 @@ body {
   text-align: center;
 }
 
-/* CARD */
+/* STAGES SECTION */
+
 .section-stages h2 {
   line-height: 1;
   margin-bottom: 1.6rem;

@@ -113,15 +113,9 @@
   margin-inline: auto;
 }
 
-/* .wide {
-  --max-width: 130rem;
+.wide {
+  --max-width: 140rem;
 }
-
-@media (max-width: 1600px) {
-  .wide {
-    --max-width: 130rem;
-  }
-} */
 
 .grid-3-cols {
   display: grid;
