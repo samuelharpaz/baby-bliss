@@ -1,0 +1,31 @@
+/* TYPOGRAPHY */
+
+.heading-primary {
+  font-size: var(--fs-xlg);
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-regular);
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.subheading {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  letter-spacing: 1px;
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-100);
+  line-height: 1;
+}
+
+.heading-secondary {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-slight-bold);
+}
+
+.heading-3 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-md);
+  /* letter-spacing: 1px; */
+}

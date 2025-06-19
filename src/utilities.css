@@ -1,0 +1,130 @@
+/* UTILITY CLASSES */
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.text-accent-primary-300 {
+  color: var(--clr-accent-primary-300);
+}
+
+.text-accent-primary-400 {
+  color: var(--clr-accent-primary-400);
+}
+
+.text-accent-secondary-400 {
+  color: var(--clr-accent-secondary-400);
+}
+
+.text-accent-highlight-400 {
+  color: var(--clr-accent-highlight-400);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-neutral-700 {
+  color: var(--clr-neutral-700);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-accent-primary-300 {
+  background-color: var(--clr-accent-primary-300);
+}
+
+.bg-accent-primary-400 {
+  background-color: var(--clr-accent-primary-400);
+}
+
+.bg-accent-secondary-400 {
+  background-color: var(--clr-accent-secondary-400);
+}
+
+.bg-accent-highlight-400 {
+  background-color: var(--clr-accent-highlight-400);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-700 {
+  background-color: var(--clr-neutral-700);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-slight-bold {
+  font-weight: var(--fw-slight-bold);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.padding-block-sm {
+  padding-block: var(--padding-block-sm);
+}
+
+.padding-block-md {
+  padding-block: var(--padding-block-md);
+}
+
+.padding-block-lg {
+  padding-block: var(--padding-block-lg);
+}
+
+.mb-reg {
+  margin-bottom: var(--mb-reg);
+}
+
+.mb-md {
+  margin-bottom: var(--mb-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--mb-lg);
+}
+
+.mb-xlg {
+  margin-bottom: var(--mb-xlg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* layout utility */
+
+.container {
+  --max-width: 128rem;
+  --padding: var(--spacing-300);
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/* .wide {
+  --max-width: 130rem;
+}
+
+@media (max-width: 1600px) {
+  .wide {
+    --max-width: 130rem;
+  }
+} */
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-800);
+}
