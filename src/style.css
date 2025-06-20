@@ -2,7 +2,7 @@
 
 body {
   font-family: var(--ff-body);
-  font-size: var(--fs-body);
+  font-size: var(--fs-400);
   color: var(--clr-neutral-700);
 }
 
@@ -52,57 +52,6 @@ body {
   color: var(--clr-accent-highlight-400);
 }
 
-/* BUTTON */
-
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border: 0;
-  border-radius: var(--spacing-100);
-  padding: var(--spacing-250) var(--spacing-400);
-  font-weight: var(--fw-semibold);
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-400);
-  line-height: 1;
-}
-
-.btn:hover,
-.btn:focus-visible {
-  background-color: var(--clr-accent-primary-400);
-  color: var(--clr-primary-400);
-}
-
-.btn-accent-primary,
-.btn-accent-primary:link,
-.btn-accent-primary:visited {
-  background-color: var(--clr-accent-primary-400);
-  color: var(--clr-primary-400);
-
-  transition: all 0.2s;
-}
-
-.btn-accent-primary:hover,
-.btn-accent-primary:focus-visible {
-  background-color: var(--clr-primary-400);
-  color: var(--clr-accent-primary-300);
-}
-
-.btn-text {
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-100);
-}
-
-.icon-btn {
-  width: var(--spacing-300);
-  height: var(--spacing-300);
-  display: inline-block;
-}
-
 /* HERO SECTION */
 
 .section-hero {
@@ -121,13 +70,9 @@ body {
 
 /* STAGES SECTION */
 
-.section-stages h2 {
-  line-height: 1;
-  margin-bottom: 1.6rem;
-}
-
 .choose {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
+  font-size: var(--fs-500);
 }
 
 .card:link,
@@ -180,9 +125,15 @@ body {
 .card span {
   display: inline-block;
   padding-left: 2px;
-  font-size: 1.6rem;
+  font-size: var(--fs-300);
   font-weight: 500;
   margin-top: 1.6rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+
+/* SECTION WHY */
+
+.main-profile {
+  border-radius: var(--border-radius);
 }

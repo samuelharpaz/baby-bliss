@@ -83,28 +83,20 @@
   padding-block: var(--padding-block-lg);
 }
 
+.mb-3 {
+  margin-bottom: var(--spacing-300);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-400);
+}
+
 .mb-5 {
   margin-bottom: var(--spacing-500);
 }
 
 .mb-6 {
   margin-bottom: var(--spacing-600);
-}
-
-.mb-reg {
-  margin-bottom: var(--mb-reg);
-}
-
-.mb-md {
-  margin-bottom: var(--mb-md);
-}
-
-.mb-lg {
-  margin-bottom: var(--mb-lg);
-}
-
-.mb-xlg {
-  margin-bottom: var(--mb-xlg);
 }
 
 .text-center {
@@ -129,4 +121,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-800);
+}
+
+.grid-2-1-cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-800);
+  align-items: center;
 }

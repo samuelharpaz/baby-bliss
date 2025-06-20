@@ -44,11 +44,15 @@ Medium:
 
 :root {
   --clr-primary-400: #405a6d;
+  --clr-primary-500: #334857;
+  --clr-primary-700: #0d1216;
 
-  --clr-accent-primary-300: #f7e7e2;
+  --clr-accent-primary-200: #faeeea;
   --clr-accent-primary-400: #f4ddd5;
 
   --clr-accent-secondary-400: #a4bbac;
+  --clr-accent-secondary-500: #94a89b;
+
   --clr-accent-highlight-400: #ecb7b3;
 
   --clr-neutral-100: #fff;
@@ -80,11 +84,11 @@ Medium:
   --fs-900: 9.8rem;
 
   --fs-nav-link: var(--fs-300);
-  --fs-body: var(--fs-400);
+  /* --fs-body: var(--fs-400);
   --fs-xlg: var(--fs-900);
   --fs-lg: var(--fs-750);
   --fs-md: var(--fs-700);
-  --fs-reg: var(--fs-600);
+  --fs-reg: var(--fs-600); */
 
   /* spacing system */
   --spacing-50: 0.4rem;
@@ -102,10 +106,13 @@ Medium:
 
   --padding-block-sm: var(--spacing-200);
   --padding-block-md: var(--spacing-500);
-  --padding-block-lg: var(--spacing-700);
+  --padding-block-lg: var(--spacing-800);
 
   --mb-reg: var(--spacing-300);
   --mb-md: var(--spacing-500);
   --mb-lg: var(--spacing-700);
   --mb-xlg: var(--spacing-800);
+
+  /* MISC */
+  --border-radius: 0.8rem;
 }

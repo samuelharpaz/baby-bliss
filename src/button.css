@@ -1,0 +1,62 @@
+/* BUTTON */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-250) var(--spacing-400);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-100);
+
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--clr-accent-primary-400);
+  color: var(--clr-primary-500);
+}
+
+.btn-accent-primary,
+.btn-accent-primary:link,
+.btn-accent-primary:visited {
+  background-color: var(--clr-accent-primary-400);
+  color: var(--clr-primary-500);
+}
+
+.btn-accent-primary:hover,
+.btn-accent-primary:focus-visible {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-accent-primary-200);
+}
+
+.btn-accent-secondary,
+.btn-accent-secondary:link,
+.btn-accent-secondary:visited {
+  background-color: var(--clr-accent-secondary-400);
+  color: var(--clr-primary-700);
+}
+
+.btn-accent-secondary:hover,
+.btn-accent-secondary:focus-visible {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.icon-btn {
+  width: var(--spacing-300);
+  height: var(--spacing-300);
+  display: inline-block;
+}
