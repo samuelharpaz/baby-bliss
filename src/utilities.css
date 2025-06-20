@@ -83,6 +83,14 @@
   padding-block: var(--padding-block-lg);
 }
 
+.mb-5 {
+  margin-bottom: var(--spacing-500);
+}
+
+.mb-6 {
+  margin-bottom: var(--spacing-600);
+}
+
 .mb-reg {
   margin-bottom: var(--mb-reg);
 }

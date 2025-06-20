@@ -4,15 +4,15 @@
   font-size: var(--fs-xlg);
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
-  font-weight: var(--fw-regular);
-  line-height: 1.2;
+  font-weight: var(--fw-semibold);
+  line-height: 1.25;
   letter-spacing: 1.4px;
 }
 
 .subheading {
   font-size: var(--fs-md);
   font-weight: var(--fw-regular);
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
   line-height: 1;
