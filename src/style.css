@@ -137,3 +137,16 @@ body {
 .main-profile {
   border-radius: var(--border-radius);
 }
+
+.why-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-800);
+  align-items: center;
+}
+
+.highlight-box {
+  padding: var(--spacing-400);
+  /* padding-block: var(--spacing-300); */
+  border-radius: var(--border-radius);
+}

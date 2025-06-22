@@ -33,6 +33,17 @@
   /* letter-spacing: 1px; */
 }
 
+h4 {
+  font-family: var(--ff-heading);
+  font-size: 2.7rem;
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+}
+
 p {
   margin-bottom: var(--spacing-200);
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
