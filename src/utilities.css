@@ -27,8 +27,16 @@
   color: var(--clr-accent-highlight-400);
 }
 
+.text-accent-highlight-2-400 {
+  color: var(--clr-accent-highlight-2-400);
+}
+
 .text-neutral-100 {
   color: var(--clr-neutral-100);
+}
+
+.text-neutral-200 {
+  color: var(--clr-neutral-200);
 }
 
 .text-neutral-700 {
@@ -53,6 +61,10 @@
 
 .bg-accent-highlight-400 {
   background-color: var(--clr-accent-highlight-400);
+}
+
+.bg-accent-highlight-2-400 {
+  background-color: var(--clr-accent-highlight-2-400);
 }
 
 .bg-neutral-100 {
