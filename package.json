@@ -12,6 +12,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "a11y-slider": "^0.4.22"
+    "a11y-slider": "^0.4.22",
+    "swiper": "^11.2.8"
   }
 }
