@@ -370,3 +370,29 @@ body {
 .accordion-panel:has([aria-expanded='true']) .accordion-icon-opened {
   display: block;
 }
+
+/* FOOTER */
+
+.footer-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 10rem;
+}
+
+.footer h5 {
+  font-size: var(--fs-500);
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.copyright {
+  margin-left: auto;
+  font-size: 1.6rem;
+}
