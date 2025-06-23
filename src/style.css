@@ -229,7 +229,7 @@ body {
 .swiper-pagination {
   --swiper-pagination-color: var(--clr-primary-700);
   --swiper-pagination-bullet-horizontal-gap: 6px;
-  --swiper-pagination-bottom: -4.2rem;
+  --swiper-pagination-bottom: -4.4rem;
 }
 
 .swiper-button-next-unique,
