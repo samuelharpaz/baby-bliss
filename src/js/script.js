@@ -1,3 +1,5 @@
+console.log('yo');
+
 // SLIDER
 const swiper = new Swiper('.swiper', {
   // If we need pagination
