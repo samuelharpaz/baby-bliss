@@ -4,7 +4,7 @@
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: var(--fs-400);
   text-decoration: none;
   cursor: pointer;
   border: 0;

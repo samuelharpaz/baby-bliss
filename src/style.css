@@ -152,6 +152,7 @@ body {
 }
 
 .highlight-box {
+  font-size: var(--fs-350);
   padding: var(--spacing-400);
   border-radius: var(--border-radius);
 }
@@ -173,7 +174,8 @@ body {
 
 .testimonial-quote {
   /* text-align: center; */
-  font-size: var(--fs-300);
+  font-size: var(--fs-350);
+  line-height: 1.5;
   /* align-self: center; */
   flex: 1;
 
@@ -343,7 +345,7 @@ body {
 }
 
 .accordion-title {
-  font-size: 1.8rem;
+  font-size: var(--fs-400);
   font-weight: 700;
 }
 
@@ -500,10 +502,6 @@ body {
   margin-bottom: var(--spacing-500);
 }
 
-.section-naava p {
-  font-size: 2rem;
-}
-
 .img-naava-about {
   border-radius: var(--border-radius);
 }
@@ -515,4 +513,74 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+/* TESTIMONIAL HIGHLIGHT SECTION */
+
+.section-testimonial-highlight {
+  padding-top: var(--spacing-200);
+  padding-bottom: var(--spacing-800);
+  background-image: url(/images/wave.svg);
+}
+
+.section-testimonial-highlight .heading-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-testimonial-highlight .heading-secondary {
+  line-height: 1.3;
+  position: relative;
+}
+
+.section-testimonial-highlight .heading-secondary::after {
+  content: url(/images/quotes.png);
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+
+.testimonial-box {
+  border-radius: var(--border-radius-lg);
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-500);
+}
+
+.testimonial-box-quote {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-250);
+}
+
+.testimonial-box-footer {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.testimonial-box-img {
+  width: 6rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.testimonial-box-author {
+  text-box: trim-both cap alphabetic;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.author-name {
+  margin-bottom: 0;
+  font-size: var(--fs-300);
+  font-weight: 500;
+}
+
+.author-description {
+  font-size: var(--fs-200);
+  letter-spacing: 0.2px;
+  font-weight: 500;
 }
