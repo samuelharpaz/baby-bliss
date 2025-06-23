@@ -436,6 +436,7 @@ body {
 }
 
 .footer-contact-box {
+  grid-column: 3 / 5;
 }
 
 .footer-contact-box p {
@@ -447,7 +448,7 @@ body {
   display: flex;
   gap: var(--spacing-300);
   align-self: start;
-  justify-self: center;
+  justify-self: start;
 }
 
 .footer-social-link:link,
