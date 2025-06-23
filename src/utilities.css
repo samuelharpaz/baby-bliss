@@ -153,6 +153,11 @@
   --max-width: 140rem;
 }
 
+.text-container {
+  width: min(70ch, 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
 .grid {
   display: grid;
   gap: var(--spacing-800);

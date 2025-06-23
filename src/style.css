@@ -485,3 +485,34 @@ body {
   margin-bottom: 0;
   color: #707070;
 }
+
+/* ////////////////////////// */
+/* ABOUT PAGE */
+
+.section-naava h1 {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+  font-weight: var(--fw-slight-bold);
+  font-size: var(--fs-850);
+  line-height: 1;
+  text-box: trim-both cap alphabetic;
+
+  margin-bottom: var(--spacing-500);
+}
+
+.section-naava p {
+  font-size: 2rem;
+}
+
+.img-naava-about {
+  border-radius: var(--border-radius);
+}
+
+/* JOIN MOTHERS SECTION */
+
+.section-join {
+  background-image: url(/images/crib.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

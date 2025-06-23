@@ -84,14 +84,10 @@ Medium:
   --fs-700: 4.4rem;
   --fs-750: 5.2rem;
   --fs-800: 6.2rem;
+  --fs-850: 7.6rem;
   --fs-900: 9.8rem;
 
   --fs-nav-link: var(--fs-300);
-  /* --fs-body: var(--fs-400);
-  --fs-xlg: var(--fs-900);
-  --fs-lg: var(--fs-750);
-  --fs-md: var(--fs-700);
-  --fs-reg: var(--fs-600); */
 
   /* spacing system */
   --spacing-50: 0.4rem;
