@@ -54,3 +54,8 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+
+::selection {
+  color: var(--clr-primary-500);
+  background-color: var(--clr-accent-primary-400);
+}
