@@ -398,8 +398,8 @@ body {
 
 .footer-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--spacing-500);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-300);
 }
 
 .footer-logo {
@@ -436,18 +436,23 @@ body {
 }
 
 .footer-contact-box {
-  grid-column: 3 / 5;
+  grid-column: 3 / span 2;
+  /* justify-self: end; */
 }
 
-.footer-contact-box p {
+.footer-phone {
   margin-bottom: var(--spacing-100);
+}
+
+.footer-email {
+  margin-bottom: var(--spacing-300);
 }
 
 .footer-social-links {
   list-style: none;
   display: flex;
-  gap: var(--spacing-300);
-  align-self: start;
+  gap: var(--spacing-200);
+  align-self: end;
   justify-self: start;
 }
 
