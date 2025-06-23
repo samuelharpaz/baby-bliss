@@ -517,12 +517,15 @@ body {
   list-style: none;
   display: flex;
   gap: var(--spacing-200);
+
   align-self: end;
   justify-self: start;
 }
 
-.footer-social-link:link,
-.footer-social-link:visited {
+/* SOCIAL LINKS */
+
+.social-link:link,
+.social-link:visited {
   width: 4rem;
   aspect-ratio: 1;
   background-color: var(--clr-primary-400);
@@ -534,12 +537,12 @@ body {
   transition: all 0.2s;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus-visible {
+.social-link:hover,
+.social-link:focus-visible {
   background-color: var(--clr-accent-highlight-400);
 }
 
-.footer-social-icon {
+.social-icon {
   height: 1.8rem;
   aspect-ratio: 1;
   fill: var(--clr-neutral-100);
@@ -652,4 +655,43 @@ body {
 
 .section-mission {
   background: var(--clr-neutral-100);
+}
+
+/* ////////////////////////// */
+/* CONTACT PAGE */
+
+.section-contact {
+  /* min-height: 100svh; */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+
+.info > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+  margin-bottom: var(--spacing-150);
+}
+
+.contact-phone,
+.contact-email {
+  line-height: 1;
+  letter-spacing: 0.2px;
+  font-size: var(--fs-500);
+}
+
+.contact-social-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-200);
 }
