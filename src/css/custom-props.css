@@ -1,0 +1,119 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line heights
+Medium: 1.2
+Paragraph default: 1.5
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+
+#ecb7b3;
+?
+#f5f5f5
+#e0dad1
+
+
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+Default: 8px
+Medium:
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --clr-primary-400: #405a6d;
+  --clr-primary-500: #334857;
+  --clr-primary-700: #0d1216;
+
+  --clr-accent-primary-200: #faeeea;
+  --clr-accent-primary-400: #f4ddd5;
+
+  --clr-accent-secondary-400: #a4bbac;
+  --clr-accent-secondary-500: #94a89b;
+
+  --clr-accent-highlight-400: #ecb7b3;
+  --clr-accent-highlight-2-400: #e0dad1;
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-200: #f5f5f5;
+  --clr-neutral-400: #54595f;
+  --clr-neutral-700: #333;
+
+  /* font family */
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+  /* weights */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-slight-bold: 500;
+  --fw-bold: 700;
+
+  /* font sizes */
+  --fs-100: 1.2rem;
+  --fs-200: 1.4rem;
+  --fs-300: 1.6rem;
+  --fs-350: 1.8rem;
+  --fs-400: 2rem;
+  --fs-500: 2.4rem;
+  --fs-600: 3.6rem;
+  --fs-700: 4.4rem;
+  --fs-750: 5.2rem;
+  --fs-800: 6.2rem;
+  --fs-850: 7.6rem;
+  --fs-900: 9.8rem;
+
+  --fs-nav-link: var(--fs-300);
+
+  /* spacing system */
+  --spacing-50: 0.4rem;
+  --spacing-100: 0.8rem;
+  --spacing-150: 1.2rem;
+  --spacing-200: 1.6rem;
+  --spacing-250: 2rem;
+  --spacing-300: 2.4rem;
+  --spacing-400: 3.2rem;
+  --spacing-500: 4.8rem;
+  --spacing-600: 6.4rem;
+  --spacing-700: 8rem;
+  --spacing-800: 9.6rem;
+  --spacing-900: 12.8rem;
+
+  --padding-block-sm: var(--spacing-200);
+  --padding-block-md: var(--spacing-500);
+  --padding-block-lg: var(--spacing-800);
+
+  --mb-reg: var(--spacing-300);
+  --mb-md: var(--spacing-500);
+  --mb-lg: var(--spacing-700);
+  --mb-xlg: var(--spacing-800);
+
+  /* MISC */
+  --border-radius: 0.8rem;
+  --border-radius-lg: 1.6rem;
+}

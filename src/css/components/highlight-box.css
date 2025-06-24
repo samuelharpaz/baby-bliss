@@ -1,0 +1,5 @@
+.highlight-box {
+  font-size: var(--fs-350);
+  padding: var(--spacing-400);
+  border-radius: var(--border-radius);
+}
