@@ -139,6 +139,10 @@
   text-align: center !important;
 }
 
+.relative {
+  position: relative !important;
+}
+
 /* layout utility */
 
 .container {
@@ -178,10 +182,6 @@
 }
 
 .grid-narrow {
-  display: grid;
+  /* display: grid; */
   gap: var(--spacing-500);
-}
-
-.relative {
-  position: relative !important;
 }
