@@ -165,18 +165,21 @@
   gap: var(--spacing-800);
 }
 
-.grid-narrow {
-  display: grid;
-  gap: var(--spacing-500);
-}
-
 .grid--2-cols {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-wide {
+  gap: var(--spacing-900);
+}
+
+.grid-narrow {
+  display: grid;
+  gap: var(--spacing-500);
 }
 
 .relative {
