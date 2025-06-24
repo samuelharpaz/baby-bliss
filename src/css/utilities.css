@@ -185,3 +185,7 @@
   /* display: grid; */
   gap: var(--spacing-500);
 }
+
+.grid-align-center {
+  align-items: center;
+}

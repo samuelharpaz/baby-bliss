@@ -238,3 +238,44 @@
   display: flex;
   gap: var(--spacing-200);
 }
+
+/* ////////////////////////// */
+/* CLASSES PAGE */
+
+/* CLASS SECTION */
+
+.class-img {
+  max-width: 44rem;
+  justify-self: center;
+  border-radius: var(--border-radius-lg);
+}
+
+.class-subheading {
+  font-size: var(--fs-500);
+  font-family: var(--ff-heading);
+}
+
+.class-list-title {
+  font-size: var(--fs-400);
+  font-family: var(--ff-heading);
+  text-transform: ;
+}
+
+.class-details {
+  list-style: none;
+}
+
+.class-detail {
+  /* list-style-image: url(/images/list-arrow.svg); */
+  font-size: 1.6rem;
+  /* position: relative; */
+}
+
+.class-detail::before {
+  content: url(/images/list-arrow.svg);
+  transform: scale(0.7);
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  margin-right: 0.4rem;
+}
