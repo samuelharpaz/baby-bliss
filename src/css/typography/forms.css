@@ -59,6 +59,12 @@ input:not([type='checkbox'], [type='radio']) {
   width: 100%;
 }
 
+textarea {
+  min-height: var(--spacing-800);
+
+  field-sizing: content;
+}
+
 ::placeholder {
   color: #999;
 }
