@@ -1,18 +1,3 @@
-@import 'base/reset.css';
-@import 'base/base.css';
-@import 'custom-props.css';
-@import 'utilities.css';
-@import 'typography/typography.css';
-@import 'layout/header.css';
-@import 'layout/footer.css';
-@import 'typography/button.css';
-@import 'typography/forms.css';
-@import 'components/stage-card.css';
-@import 'components/highlight-box.css';
-@import 'components/accordion.css';
-@import 'components/slider.css';
-@import 'components/testimonial-box.css';
-
 /* HERO SECTION */
 
 .section-hero {
@@ -27,6 +12,26 @@
 
 .hero-wrapper {
   text-align: center;
+}
+
+.hero-heading {
+  /* font-size: var(--fs-900); */
+  font-size: 20rem;
+  /* font-family: var(--ff-heading); */
+  font-family: var(--ff-decorative);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-slight-bold);
+  line-height: 1.1;
+  transform: rotate(-2deg);
+}
+
+.hero-subheading {
+  font-size: var(--fs-750);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-100);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-900);
 }
 
 /* STAGES SECTION */

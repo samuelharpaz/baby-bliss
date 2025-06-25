@@ -1,25 +1,5 @@
 /* TYPOGRAPHY */
 
-.hero-heading {
-  /* font-size: var(--fs-900); */
-  font-size: 20rem;
-  /* font-family: var(--ff-heading); */
-  font-family: var(--ff-decorative);
-  color: var(--clr-neutral-100);
-  font-weight: var(--fw-slight-bold);
-  line-height: 1.1;
-  transform: rotate(-2deg);
-}
-
-.hero-subheading {
-  font-size: var(--fs-750);
-  font-weight: var(--fw-regular);
-  font-family: var(--ff-heading);
-  color: var(--clr-neutral-100);
-  line-height: 1.1;
-  margin-bottom: var(--spacing-900);
-}
-
 .heading-primary {
   font-family: var(--ff-decorative);
   color: rgba(236, 183, 179, 0.3);
