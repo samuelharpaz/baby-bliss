@@ -19,6 +19,10 @@
   background: none;
 }
 
+.heading-primary--no-bg {
+  background: none;
+}
+
 .heading-secondary {
   font-family: var(--ff-heading);
   font-size: var(--fs-700);
@@ -46,6 +50,16 @@ h4 {
 
 .heading-secondary:has(+ p) {
   margin-bottom: var(--spacing-400);
+}
+
+.pre-heading {
+  font-family: var(--ff-body);
+  text-transform: uppercase;
+  font-weight: var(--fw-slight-bold);
+  font-size: var(--fs-200);
+  letter-spacing: 1.6px;
+  margin-bottom: var(--spacing-200);
+  text-box: trim-both cap alphabetic;
 }
 
 p {

@@ -1,4 +1,11 @@
 /* UTILITY CLASSES */
+
+/* text colors */
+
+.text-primary-100 {
+  color: var(--clr-primary-100) !important;
+}
+
 .text-primary-400 {
   color: var(--clr-primary-400) !important;
 }
@@ -27,6 +34,10 @@
   color: var(--clr-accent-highlight-400) !important;
 }
 
+.text-accent-highlight-500 {
+  color: var(--clr-accent-highlight-500) !important;
+}
+
 .text-accent-highlight-2-400 {
   color: var(--clr-accent-highlight-2-400) !important;
 }
@@ -41,6 +52,16 @@
 
 .text-neutral-700 {
   color: var(--clr-neutral-700) !important;
+}
+
+.text-primary-100 {
+  color: var(--clr-primary-100) !important;
+}
+
+/* background colors */
+
+.bg-primary-100 {
+  background-color: var(--clr-primary-100) !important;
 }
 
 .bg-primary-400 {
@@ -63,12 +84,20 @@
   background-color: var(--clr-accent-highlight-400) !important;
 }
 
+.bg-accent-highlight-500 {
+  background-color: var(--clr-accent-highlight-500) !important;
+}
+
 .bg-accent-highlight-2-400 {
   background-color: var(--clr-accent-highlight-2-400) !important;
 }
 
 .bg-neutral-100 {
   background-color: var(--clr-neutral-100) !important;
+}
+
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200) !important;
 }
 
 .bg-neutral-700 {
@@ -101,6 +130,10 @@
 
 .padding-block-lg {
   padding-block: var(--padding-block-lg) !important;
+}
+
+.padding-block-xlg {
+  padding-block: var(--padding-block-xlg) !important;
 }
 
 .mb-1 {
@@ -179,6 +212,14 @@
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .grid-wide {
