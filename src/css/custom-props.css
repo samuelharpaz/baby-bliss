@@ -64,6 +64,7 @@ Medium:
   /* font family */
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Playfair Display', serif;
+  --ff-decorative: 'Great Vibes', serif;
 
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-secondary);
@@ -103,6 +104,7 @@ Medium:
   --spacing-700: 8rem;
   --spacing-800: 9.6rem;
   --spacing-900: 12.8rem;
+  --spacing-1000: 16rem;
 
   --padding-block-sm: var(--spacing-200);
   --padding-block-md: var(--spacing-500);
@@ -114,6 +116,6 @@ Medium:
   --mb-xlg: var(--spacing-800);
 
   /* MISC */
-  --border-radius: 0.8rem;
-  --border-radius-lg: 1.6rem;
+  --border-radius: 0.6rem;
+  --border-radius-lg: 1.2rem;
 }

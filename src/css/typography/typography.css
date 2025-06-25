@@ -1,29 +1,49 @@
 /* TYPOGRAPHY */
 
-.heading-primary {
-  font-size: var(--fs-900);
-  font-family: var(--ff-heading);
+.hero-heading {
+  /* font-size: var(--fs-900); */
+  font-size: 20rem;
+  /* font-family: var(--ff-heading); */
+  font-family: var(--ff-decorative);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-slight-bold);
-  line-height: 1.25;
-  letter-spacing: 1.3px;
+  line-height: 1.1;
+  transform: rotate(-2deg);
 }
 
-.subheading {
-  font-size: var(--fs-700);
+.hero-subheading {
+  font-size: var(--fs-750);
   font-weight: var(--fw-regular);
-  letter-spacing: 0.4px;
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-900);
+}
+
+.heading-primary {
+  font-family: var(--ff-decorative);
+  color: rgba(236, 183, 179, 0.3);
+  background-color: rgba(236, 183, 179, 0.1);
+  background-clip: content-box;
+  padding-top: var(--spacing-700);
+  padding-bottom: var(--spacing-800);
+  font-size: 22rem;
   line-height: 1;
-  margin-bottom: var(--spacing-800);
+
+  font-weight: var(--fw-semibold);
+  transform: rotate(-3deg);
+}
+
+.heading-primary--white {
+  color: rgba(255, 255, 255, 0.7);
+  background: none;
 }
 
 .heading-secondary {
   font-family: var(--ff-heading);
   font-size: var(--fs-700);
   letter-spacing: 0.2px;
-  line-height: 1;
+  line-height: 1.1;
 
   text-transform: uppercase;
   font-weight: var(--fw-regular);
@@ -31,16 +51,17 @@
 
 .heading-3 {
   font-family: var(--ff-heading);
-  font-size: var(--fs-700);
-  /* letter-spacing: 1px; */
+  font-size: var(--fs-600);
+  text-transform: uppercase;
 }
 
 h4 {
-  font-family: var(--ff-heading);
-  font-size: 2.7rem;
+  /* font-family: var(--ff-heading); */
+  font-family: var(--ff-decorative);
+  /* font-size: 2.7rem; */
+  font-size: var(--fs-600);
   font-weight: var(--fw-semibold);
   line-height: 1;
-  letter-spacing: 0.2px;
 }
 
 .heading-secondary:has(+ p) {

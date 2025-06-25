@@ -5,7 +5,7 @@
   --_panel-padding: var(--spacing-250);
   --_panel-gap: var(--spacing-300);
   --_title-size: var(--fs-400);
-  --_title-weight: var(--fw-bold);
+  --_title-weight: var(--fw-semibold);
   --_title-family: var(--ff-body);
   --_button-justify: space-between;
   --_bg: var(--clr-accent-highlight-2-400);

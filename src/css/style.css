@@ -17,7 +17,7 @@
 
 .section-hero {
   height: calc(100svh - 12.9rem);
-  background: linear-gradient(to top, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4)), url(/images/hero.jpg);
+  background: linear-gradient(to top, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.4)), url(/images/hero.jpg);
   background-size: cover;
   background-position: center 82%;
 
@@ -32,14 +32,14 @@
 /* STAGES SECTION */
 
 .section-stages {
-  padding-block: var(--spacing-900) var(--spacing-800);
+  padding-block: var(--spacing-900) var(--spacing-500);
 }
 
 .choose {
-  /* font-size: 2.2rem; */
   font-size: var(--fs-500);
+  font-family: var(--ff-body);
+  font-weight: 450;
   display: block;
-  text-align: center;
 }
 
 /* SECTION WHY */
@@ -52,10 +52,15 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--spacing-800);
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* TESTIMONIAL SECTION */
+
+.section-testimonials {
+  padding-top: var(--spacing-800);
+  padding-bottom: var(--spacing-900);
+}
 
 .testimonial-card {
   border-radius: var(--border-radius);
@@ -63,18 +68,14 @@
   padding-top: var(--spacing-500);
   color: var(--clr-primary-700);
 
-  /* height: 100%; */
-
   display: flex;
   flex-direction: column;
   gap: var(--spacing-400);
 }
 
 .testimonial-quote {
-  /* text-align: center; */
   font-size: var(--fs-350);
   line-height: 1.5;
-  /* align-self: center; */
   flex: 1;
 
   display: flex;
@@ -98,9 +99,11 @@
 }
 
 .testimonial-name {
+  font-family: var(--ff-decorative);
+  color: var(--clr-primary-500);
   text-align: center;
-  font-size: var(--fs-300);
-  font-weight: var(--fw-slight-bold);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semibold);
   margin-bottom: 0;
 }
 
@@ -144,7 +147,11 @@
 /* ////////////////////////// */
 /* ABOUT PAGE */
 
-.section-naava h1 {
+.section-naava {
+  padding-bottom: var(--spacing-800);
+}
+
+.heading-naava {
   font-family: var(--ff-heading);
   text-transform: uppercase;
   font-weight: var(--fw-slight-bold);
@@ -204,7 +211,7 @@
 /* CONTACT PAGE */
 
 .section-contact {
-  /* min-height: 100svh; */
+  padding-bottom: var(--spacing-800);
 }
 
 .info {
@@ -229,7 +236,6 @@
 .contact-phone,
 .contact-email {
   line-height: 1;
-  letter-spacing: 0.2px;
   font-size: var(--fs-500);
 }
 
@@ -244,10 +250,22 @@
 
 /* CLASS SECTION */
 
+.class-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--spacing-300);
+  row-gap: var(--spacing-900);
+  /* align-items: center; */
+}
+
 .class-img {
-  max-width: 44rem;
-  justify-self: center;
-  border-radius: var(--border-radius-lg);
+  max-width: 54rem;
+  /* justify-self: center; */
+  border-radius: var(--border-radius);
+}
+
+.class-img--right {
+  justify-self: end;
 }
 
 .class-subheading {
@@ -263,19 +281,26 @@
 
 .class-details {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 1.6rem;
 }
 
 .class-detail {
-  /* list-style-image: url(/images/list-arrow.svg); */
-  font-size: 1.6rem;
-  /* position: relative; */
+  font-size: 1.8rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: start;
+  gap: 0.1rem;
 }
 
 .class-detail::before {
   content: url(/images/list-arrow.svg);
-  transform: scale(0.7);
+  transform: scale(0.65);
   position: relative;
-  top: 5px;
+  top: 10px;
   display: inline-block;
-  margin-right: 0.4rem;
+  /* margin-right: 0.4rem; */
+  text-box: trim-both cap alphabetic;
 }
