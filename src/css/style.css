@@ -440,6 +440,10 @@
 
 /* GIFT CARD SECTION */
 
+.section-gift {
+  padding-bottom: var(--spacing-800);
+}
+
 .gift-wrapper {
   max-height: 72.1rem;
   overflow: hidden;
@@ -454,4 +458,19 @@
 
 .gift-img:hover {
   transform: translateY(-50%);
+}
+
+/* CLASSES FAQ SECTION */
+
+.section-classes-faq {
+}
+
+.classes-faq {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+
+.classes-faq li {
 }
