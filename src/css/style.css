@@ -318,15 +318,32 @@
 /* PRICING SECTION */
 
 .pricing-wrapper {
+  --max-width: 96rem;
+  --padding: var(--spacing-300);
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+
   scroll-margin-top: 35svh;
 }
 
+.pricing-wrapper--narrow {
+  --max-width: 72rem;
+}
+
 .pricing {
-  width: 66.6%;
+  /* width: 66.6%; */
   border-radius: var(--border-radius);
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recommended {
+  box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.2);
 }
 
 .pricing-heading {

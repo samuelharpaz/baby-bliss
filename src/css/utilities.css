@@ -6,6 +6,10 @@
   color: var(--clr-primary-100) !important;
 }
 
+.text-primary-200 {
+  color: var(--clr-primary-200) !important;
+}
+
 .text-primary-400 {
   color: var(--clr-primary-400) !important;
 }
@@ -62,6 +66,10 @@
 
 .bg-primary-100 {
   background-color: var(--clr-primary-100) !important;
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200) !important;
 }
 
 .bg-primary-400 {
@@ -166,6 +174,10 @@
 
 .mb-8 {
   margin-bottom: var(--spacing-800) !important;
+}
+
+.mb-9 {
+  margin-bottom: var(--spacing-900) !important;
 }
 
 .text-center {
