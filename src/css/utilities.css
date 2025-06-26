@@ -238,3 +238,11 @@
 .grid-row-gap-lg {
   row-gap: var(--spacing-900);
 }
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
+}

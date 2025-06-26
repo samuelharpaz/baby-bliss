@@ -318,7 +318,7 @@
 /* PRICING SECTION */
 
 .pricing-wrapper {
-  justify-items: end;
+  scroll-margin-top: 35svh;
 }
 
 .pricing {
@@ -327,10 +327,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-.pricing--right {
-  justify-self: start;
 }
 
 .pricing-heading {
