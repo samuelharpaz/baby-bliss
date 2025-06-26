@@ -89,3 +89,8 @@ form button {
   background-color: var(--clr-neutral-100);
   color: var(--clr-primary-400);
 }
+
+select {
+  padding: var(--spacing-100) var(--spacing-150);
+  border-radius: var(--border-radius);
+}

@@ -74,3 +74,9 @@ p:last-child {
   color: var(--clr-primary-500);
   background-color: var(--clr-accent-primary-400);
 }
+
+.asterisk {
+  font-size: var(--fs-400);
+  margin-left: 0.3rem;
+  vertical-align: super;
+}
