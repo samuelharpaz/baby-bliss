@@ -22,12 +22,14 @@ const swiper = new Swiper('.swiper', {
 
 const accordion = document.querySelector('.accordion');
 
-accordion.addEventListener('click', function (e) {
-  const activePanel = e.target.closest('.accordion-panel');
-  if (!activePanel) return;
+if (accordion) {
+  accordion.addEventListener('click', function (e) {
+    const activePanel = e.target.closest('.accordion-panel');
+    if (!activePanel) return;
 
-  toggleAccordion(activePanel);
-});
+    toggleAccordion(activePanel);
+  });
+}
 
 function toggleAccordion(panelToActivate) {
   const buttons = panelToActivate.parentElement.querySelectorAll('button');
@@ -48,3 +50,27 @@ function toggleAccordion(panelToActivate) {
     panelToActivate.querySelector('.accordion-content').setAttribute('aria-hidden', false);
   }
 }
+
+///////////////////////////////////////
+// pricing table select functionality
+
+const dropdownVirtual = document.querySelector('.pricing-select--virtual');
+const dropdownHome = document.querySelector('.pricing-select--home');
+const btnsStage = document.querySelectorAll('[data-stage]');
+
+const classWrapper = document.querySelector('.class-wrapper');
+
+classWrapper.addEventListener('click', function (e) {
+  if (Array.from(btnsStage).includes(e.target)) {
+    dropdownVirtual.value = e.target.dataset.stage;
+    dropdownHome.value = e.target.dataset.stage;
+  }
+});
+
+dropdownVirtual.addEventListener('change', function () {
+  dropdownHome.value = this.value;
+});
+
+dropdownHome.addEventListener('change', function () {
+  dropdownVirtual.value = this.value;
+});
