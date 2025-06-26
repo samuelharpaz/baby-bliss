@@ -437,3 +437,21 @@
   margin-bottom: var(--spacing-400);
   font-weight: bold;
 }
+
+/* GIFT CARD SECTION */
+
+.gift-wrapper {
+  max-height: 72.1rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gift-img {
+  object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+}
+
+.gift-img:hover {
+  transform: translateY(-50%);
+}
