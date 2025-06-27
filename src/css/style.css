@@ -505,7 +505,33 @@
 
 /* ////////////////////////// */
 /* FAVES PAGE */
+.section-products {
+}
 
 .section-products .heading-primary {
   opacity: 0.8;
+}
+
+.product-pick {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.product-pick-content {
+  /* padding-block: var(--spacing-250); */
+}
+
+.product-pick-name {
+  font-family: var(--ff-body);
+  font-size: var(--fs-500);
+  margin-bottom: var(--spacing-150);
+}
+
+.product-pick-description {
+  font-size: var(--fs-350);
+  margin-bottom: var(--spacing-250);
+}
+
+.product-pick-img {
+  border-radius: var(--border-radius);
 }
