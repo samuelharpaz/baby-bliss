@@ -22,14 +22,12 @@ const swiper = new Swiper('.swiper', {
 
 const accordion = document.querySelector('.accordion');
 
-if (accordion) {
-  accordion.addEventListener('click', function (e) {
-    const activePanel = e.target.closest('.accordion-panel');
-    if (!activePanel) return;
+accordion?.addEventListener('click', function (e) {
+  const activePanel = e.target.closest('.accordion-panel');
+  if (!activePanel) return;
 
-    toggleAccordion(activePanel);
-  });
-}
+  toggleAccordion(activePanel);
+});
 
 function toggleAccordion(panelToActivate) {
   const buttons = panelToActivate.parentElement.querySelectorAll('button');
@@ -60,17 +58,17 @@ const btnsStage = document.querySelectorAll('[data-stage]');
 
 const classWrapper = document.querySelector('.class-wrapper');
 
-classWrapper.addEventListener('click', function (e) {
+classWrapper?.addEventListener('click', function (e) {
   if (Array.from(btnsStage).includes(e.target)) {
     dropdownVirtual.value = e.target.dataset.stage;
     dropdownHome.value = e.target.dataset.stage;
   }
 });
 
-dropdownVirtual.addEventListener('change', function () {
+dropdownVirtual?.addEventListener('change', function () {
   dropdownHome.value = this.value;
 });
 
-dropdownHome.addEventListener('change', function () {
+dropdownHome?.addEventListener('change', function () {
   dropdownVirtual.value = this.value;
 });

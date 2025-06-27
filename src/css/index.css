@@ -7,9 +7,10 @@
 @import 'layout/footer.css';
 @import 'typography/button.css';
 @import 'typography/forms.css';
-@import 'components/stage-card.css';
-@import 'components/highlight-box.css';
 @import 'components/accordion.css';
+@import 'components/highlight-box.css';
+@import 'components/product-card.css';
 @import 'components/slider.css';
+@import 'components/stage-card.css';
 @import 'components/testimonial-box.css';
 @import 'style.css';

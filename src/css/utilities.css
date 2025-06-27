@@ -144,6 +144,14 @@
   padding-block: var(--padding-block-xlg) !important;
 }
 
+.pt-400 {
+  padding-top: var(--spacing-400);
+}
+
+.pb-800 {
+  padding-bottom: var(--spacing-800);
+}
+
 .mb-1 {
   margin-bottom: var(--spacing-100) !important;
 }
@@ -204,6 +212,10 @@
 
 .wide {
   --max-width: 140rem;
+}
+
+.narrow {
+  --max-width: 96rem;
 }
 
 .text-container {

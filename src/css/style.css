@@ -502,3 +502,10 @@
 .classes-faq-answer {
   color: var(--clr-primary-700);
 }
+
+/* ////////////////////////// */
+/* FAVES PAGE */
+
+.section-products .heading-primary {
+  opacity: 0.8;
+}
