@@ -263,13 +263,13 @@
 .class-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: var(--spacing-300);
+  column-gap: var(--spacing-500);
   row-gap: var(--spacing-900);
   /* align-items: center; */
 }
 
 .class-img {
-  max-width: 54rem;
+  max-width: 50rem;
   /* justify-self: center; */
   border-radius: var(--border-radius);
 }

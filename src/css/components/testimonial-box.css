@@ -30,13 +30,14 @@
   gap: var(--spacing-100);
 }
 
-.author-name {
+.testimonial-box-author-name {
   margin-bottom: 0;
-  font-size: var(--fs-300);
-  font-weight: 500;
+  font-size: var(--fs-500);
+  font-family: var(--ff-decorative);
+  font-weight: var(--fw-semibold);
 }
 
-.author-description {
+.testimonial-box-author-description {
   font-size: var(--fs-200);
   letter-spacing: 0.2px;
   font-weight: 500;
