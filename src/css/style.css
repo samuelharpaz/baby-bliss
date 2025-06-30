@@ -18,16 +18,17 @@
 .hero-heading {
   /* large desktop */
   /* font-size: 20rem;  */
-  font-size: 14rem;
+  font-size: 18rem;
   font-family: var(--ff-decorative);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-slight-bold);
   line-height: 1.05;
   transform: rotate(-2deg);
+  margin-bottom: var(--spacing-600);
 }
 
 .hero-subheading {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   font-weight: var(--fw-regular);
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
@@ -49,6 +50,11 @@
 }
 
 /* SECTION WHY */
+
+.section-why {
+  padding-top: var(--spacing-800);
+  padding-bottom: var(--spacing-400);
+}
 
 .main-profile {
   border-radius: var(--border-radius);
@@ -157,6 +163,10 @@
   padding-bottom: var(--spacing-800);
 }
 
+.container-about {
+  margin-bottom: var(--spacing-700);
+}
+
 .heading-naava {
   font-family: var(--ff-heading);
   text-transform: uppercase;
@@ -220,13 +230,19 @@
   padding-bottom: var(--spacing-800);
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-500);
+.contact-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--spacing-900);
 }
 
-.info > div {
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-600);
+}
+
+.contact-info > div {
   display: flex;
   flex-direction: column;
 }
@@ -242,7 +258,7 @@
 .contact-phone,
 .contact-email {
   line-height: 1;
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
 }
 
 .contact-social-links {
@@ -265,7 +281,10 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: var(--spacing-500);
   row-gap: var(--spacing-900);
-  /* align-items: center; */
+}
+
+.class-wrapper:not(:last-child) {
+  margin-bottom: var(--spacing-900);
 }
 
 .class-img {
@@ -332,7 +351,7 @@
 }
 
 .pricing-wrapper--narrow {
-  --max-width: 80rem;
+  --max-width: 75rem;
 }
 
 .pricing {
@@ -449,9 +468,9 @@
 }
 
 .gift-wrapper {
-  max-width: 80rem;
+  max-width: 75rem;
   margin-inline: auto;
-  max-height: 45.0625rem;
+  max-height: 42.25rem;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -485,7 +504,7 @@
   /* font-size: var(--fs-400); */
   font-weight: var(--fw-semibold);
   color: var(--clr-primary-700);
-  line-height: 1.3;
+  line-height: 1.4;
   position: relative;
 
   margin-bottom: var(--spacing-500);
@@ -494,7 +513,7 @@
 .classes-faq-question::after {
   content: '';
   position: absolute;
-  bottom: -2.4rem;
+  bottom: -2rem;
   left: 0;
   width: 12rem;
   background-color: #333;
@@ -511,7 +530,7 @@
 }
 
 .section-products .heading-primary {
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 /* SECTION RECOMMENCED */

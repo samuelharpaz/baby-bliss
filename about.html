@@ -30,7 +30,7 @@
       <div class="container wide">
         <div class="header-wrapper">
           <a href="index.html"><img src="/images/logo.png" alt="Baby Bliss logo" class="logo" /></a>
-          <nav class="main-nav">
+          <nav class="main-nav" id="main-nav">
             <ul class="nav-list">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link current" href="about.html">About me</a></li>
@@ -40,6 +40,14 @@
             </ul>
           </nav>
           <a class="btn btn-accent-primary" href="#">Book consultation</a>
+
+          <button class="mobile-nav-btn" aria-controls="main-nav" aria-expanded="false">
+            <svg class="mobile-nav-icon" viewBox="0 0 100 100">
+              <rect class="line line--top" width="80" height="10" x="10" y="25" rx="5"></rect>
+              <rect class="line line--middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+              <rect class="line line--bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -49,7 +57,7 @@
         <div class="container">
           <h1 class="heading-primary">About Me</h1>
         </div>
-        <div class="container grid grid--2-cols mb-7">
+        <div class="container container-about grid grid--2-cols">
           <div class="col-1">
             <h2 class="heading-naava">Naava Lindner</h2>
             <p>
@@ -429,7 +437,7 @@
         </div>
       </div>
       <div class="container">
-        <p class="copyright text-center">Copyright &copy; 2025 babyblissbynaava.com</p>
+        <p class="copyright text-center">Copyright &copy; <span class="year">2025</span> babyblissbynaava.com</p>
       </div>
     </footer>
   </body>

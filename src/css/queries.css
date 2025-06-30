@@ -1,0 +1,268 @@
+/* 1440 px */
+@media (max-width: 90em) {
+  .section-hero {
+    padding-top: var(--spacing-500);
+  }
+
+  .hero-heading {
+    font-size: 15rem;
+    margin-bottom: var(--spacing-500);
+  }
+
+  .hero-subheading {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-heading);
+    color: var(--clr-neutral-100);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-500);
+  }
+
+  .heading-naava {
+    font-size: var(--fs-800);
+  }
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    gap: var(--spacing-700);
+  }
+
+  .grid-wide {
+    gap: var(--spacing-900);
+  }
+
+  .logo {
+    width: 11rem;
+  }
+
+  .main-nav {
+    margin-right: auto;
+    /* margin-left: var(--spacing-700); */
+  }
+
+  .nav-list {
+    gap: var(--spacing-500);
+  }
+
+  .section-hero {
+    height: calc(100svh - 10.3rem);
+  }
+
+  .footer {
+    padding-top: var(--spacing-800);
+    padding-bottom: var(--spacing-400);
+  }
+
+  .heading-naava {
+    font-size: var(--fs-750);
+  }
+
+  .class-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: var(--spacing-600);
+    width: min(70ch, 100% - (var(--padding) * 2));
+    margin-inline: auto;
+  }
+
+  .class-img {
+    margin-inline: auto;
+  }
+
+  .class-wrapper:nth-child(even) > img {
+    order: 1;
+  }
+
+  .classes-faq-question {
+    margin-bottom: var(--spacing-600);
+  }
+
+  .classes-faq-question::after {
+    bottom: -1.6rem;
+    width: 10rem;
+  }
+}
+
+/* 945px */
+@media (max-width: 59em) {
+  /* MOBILE NAV */
+
+  .header-wrapper {
+    justify-content: space-between;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-600);
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semibold);
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon-open {
+    display: none;
+  }
+
+  .nav-open .mobile-nav-icon-close {
+    display: block;
+  }
+
+  .header-wrapper .btn:link,
+  .header-wrapper .btn:visited {
+    display: none;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary {
+    padding-top: var(--spacing-700);
+    padding-bottom: var(--spacing-800);
+    font-size: 16rem;
+
+    font-weight: var(--fw-semibold);
+  }
+
+  .heading-secondary {
+    font-size: var(--fs-600);
+    letter-spacing: 0.2px;
+    line-height: 1.1;
+  }
+
+  .choose {
+    font-size: var(--fs-400);
+  }
+
+  .stage-card:link,
+  .stage-card:visited {
+    height: 32.5rem;
+    width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+
+  .highlight-box {
+    max-width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+
+  .container-about {
+    width: min(70ch, 100% - (var(--padding) * 2));
+    margin-bottom: var(--spacing-200);
+  }
+
+  .container-about .col-2 {
+    order: -1;
+  }
+
+  .img-naava-about {
+    margin-inline: auto;
+    max-width: var(--component-width-constrain);
+  }
+
+  .testimonial-box {
+    max-width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+
+  .pricing {
+    width: var(--component-width-constrain-narrow);
+    margin-inline: auto;
+  }
+
+  .pricing-wrapper--narrow {
+    --max-width: var(--component-width-constrain);
+  }
+
+  .classes-faq-question::after {
+    width: 6rem;
+  }
+
+  .product-card {
+    max-width: var(--component-width-constrain);
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .product-content {
+    padding: var(--spacing-600);
+  }
+
+  .product-img {
+    height: 36rem;
+  }
+
+  .grid-product-pick {
+    gap: var(--spacing-800);
+  }
+
+  .product-pick {
+    gap: var(--spacing-600);
+    max-width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-800);
+  }
+
+  .form-contact {
+    max-width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+
+  .contact-info-wrapper {
+    width: var(--component-width-constrain);
+    margin-inline: auto;
+  }
+}

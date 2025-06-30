@@ -55,6 +55,7 @@ Medium:
   --clr-accent-secondary-400: #a4bbac;
   --clr-accent-secondary-500: #94a89b;
 
+  --clr-accent-highlight-200: #f2cdca;
   --clr-accent-highlight-400: #ecb7b3;
   --clr-accent-highlight-500: #e39691;
   --clr-accent-highlight-2-400: #e0dad1;
@@ -122,4 +123,26 @@ Medium:
   /* MISC */
   --border-radius: 0.6rem;
   --border-radius-lg: 1.2rem;
+
+  /* MOBILE */
+  --component-width-constrain: 70%;
+  --component-width-constrain-narrow: 50%;
+}
+
+@media (max-width: 75em) {
+  :root {
+    --spacing-50: 0.2rem;
+    --spacing-100: 0.4rem;
+    --spacing-150: 0.8rem;
+    --spacing-200: 1.2rem;
+    --spacing-250: 1.6rem;
+    --spacing-300: 2rem;
+    --spacing-400: 2.4rem;
+    --spacing-500: 3.2rem;
+    --spacing-600: 4.8rem;
+    --spacing-700: 6.4rem;
+    --spacing-800: 8rem;
+    --spacing-900: 9.6rem;
+    --spacing-1000: 12.8rem;
+  }
 }

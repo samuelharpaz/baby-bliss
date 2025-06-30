@@ -3,6 +3,8 @@ html {
   box-sizing: border-box;
 
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -10,4 +12,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-400);
   color: var(--clr-neutral-700);
+
+  overflow-x: hidden;
+  position: relative;
 }

@@ -40,6 +40,14 @@
             </ul>
           </nav>
           <a class="btn btn-accent-primary" href="#">Book consultation</a>
+
+          <button class="mobile-nav-btn" aria-controls="main-nav" aria-expanded="false">
+            <svg class="mobile-nav-icon" viewBox="0 0 100 100">
+              <rect class="line line--top" width="80" height="10" x="10" y="25" rx="5"></rect>
+              <rect class="line line--middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+              <rect class="line line--bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -49,7 +57,7 @@
         <div class="container">
           <h1 class="heading-primary heading-primary--white">Let's Talk</h1>
         </div>
-        <div class="container grid grid--2-cols grid-wide">
+        <div class="container contact-container">
           <div class="col-1">
             <!-- <h2 class="heading-secondary text-center mb-5">let's talk!</h2> -->
             <form action="" method="post" class="form-contact">
@@ -73,9 +81,9 @@
               <button>Send message</button>
             </form>
           </div>
-          <div class="col-2">
+          <div class="contact-info-wrapper">
             <h2 class="heading-secondary mb-5">Contact</h2>
-            <div class="info">
+            <div class="contact-info">
               <div>
                 <span class="contact-label">Call / Text / WhatsApp</span>
                 <span class="contact-phone">323-840-4802</span>
@@ -85,7 +93,7 @@
                 <span class="contact-email">contact@babyblissbynaava.com</span>
               </div>
               <div>
-                <span class="contact-label">Keep in touch</span>
+                <span class="contact-label mb-2">Keep in touch</span>
                 <ul class="contact-social-links">
                   <li>
                     <a href="https://www.instagram.com/babyblissbynaava/" target="_blank" class="social-link">
@@ -163,7 +171,7 @@
         </div>
       </div>
       <div class="container">
-        <p class="copyright text-center">Copyright &copy; 2025 babyblissbynaava.com</p>
+        <p class="copyright text-center">Copyright &copy; <span class="year">2025</span> babyblissbynaava.com</p>
       </div>
     </footer>
   </body>

@@ -12,6 +12,7 @@
   --_bg-content: transparent;
   --_color-heading: var(--clr-primary-500);
   --_color-body: var(--clr-neutral-200);
+  --_panel-border-radius: var(--border-radius);
 
   display: flex;
   flex-direction: column;
@@ -26,12 +27,13 @@
   --_button-justify: center;
   --_panel-padding: var(--spacing-300);
   --_panel-gap: 0;
+  --_panel-border-radius: 0;
 }
 
 .accordion-panel {
   cursor: pointer;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--_panel-border-radius);
 
   background: var(--_bg-content);
 
@@ -68,7 +70,7 @@
 } */
 
 .accordion-heading {
-  border-radius: 8px;
+  border-radius: var(--_panel-border-radius);
   background-color: var(--_bg);
   color: var(--_color-heading);
   padding-block: var(--_panel-padding);
@@ -81,6 +83,7 @@
   font-size: var(--_title-size);
   font-weight: var(--_title-weight);
   font-family: var(--_title-family);
+  text-align: left;
 }
 
 .accordion-lg .accordion-heading {

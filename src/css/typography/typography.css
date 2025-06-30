@@ -2,8 +2,9 @@
 
 .heading-primary {
   font-family: var(--ff-decorative);
-  color: rgba(236, 183, 179, 0.3);
+  color: var(--clr-accent-highlight-200);
   background-color: rgba(236, 183, 179, 0.1);
+  text-align: center;
   background-clip: content-box;
   padding-top: var(--spacing-700);
   padding-bottom: var(--spacing-800);
@@ -15,12 +16,13 @@
 }
 
 .heading-primary--white {
-  color: rgba(255, 255, 255, 0.7);
-  background: none;
+  color: var(--clr-neutral-100);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.heading-primary--no-bg {
-  background: none;
+.heading-primary--blue {
+  color: var(--clr-primary-400);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .heading-secondary {

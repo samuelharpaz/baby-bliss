@@ -37,6 +37,7 @@
 .footer-nav-link:link,
 .footer-nav-link:visited {
   text-decoration: none;
+  text-transform: capitalize;
   color: inherit;
   transition: all 0.2s;
   font-weight: var(--fw-slight-bold);

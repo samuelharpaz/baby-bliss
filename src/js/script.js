@@ -1,3 +1,22 @@
+// KEEP COPYRIGHT UPDATED
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear() + 10;
+yearEl.textContent = currentYear;
+
+// MOBILE NAV
+const mainHeader = document.querySelector('.main-header');
+const btnMobileNavToggle = document.querySelector('.mobile-nav-btn');
+
+btnMobileNavToggle.addEventListener('click', function (e) {
+  if (this.getAttribute('aria-expanded') === 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  } else {
+    this.setAttribute('aria-expanded', 'false');
+  }
+
+  mainHeader.classList.toggle('nav-open');
+});
+
 // SLIDER
 const swiper = new Swiper('.swiper', {
   // If we need pagination
