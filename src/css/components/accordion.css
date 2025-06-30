@@ -20,8 +20,8 @@
 }
 
 .accordion-lg {
-  --_button-size: var(--fs-700);
-  --_title-size: var(--fs-700);
+  --_button-size: var(--fs-600);
+  --_title-size: var(--fs-600);
   --_title-weight: var(--fw-slight-bold);
   --_title-family: var(--ff-heading);
   --_button-justify: center;

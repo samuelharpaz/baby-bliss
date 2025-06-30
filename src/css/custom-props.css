@@ -125,7 +125,7 @@ Medium:
   --border-radius-lg: 1.2rem;
 
   /* MOBILE */
-  --component-width-constrain: 70%;
+  --component-width-constrain: 75%;
   --component-width-constrain-narrow: 50%;
 }
 
@@ -144,5 +144,18 @@ Medium:
     --spacing-800: 8rem;
     --spacing-900: 9.6rem;
     --spacing-1000: 12.8rem;
+  }
+}
+
+@media (max-width: 46em) {
+  :root {
+    --component-width-constrain-narrow: 65%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  :root {
+    --component-width-constrain: 100%;
+    /* --component-width-constrain-narrow: 80%; */
   }
 }

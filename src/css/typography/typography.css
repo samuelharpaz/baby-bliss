@@ -2,7 +2,7 @@
 
 .heading-primary {
   font-family: var(--ff-decorative);
-  color: var(--clr-accent-highlight-200);
+  color: var(--clr-accent-highlight-400);
   background-color: rgba(236, 183, 179, 0.1);
   text-align: center;
   background-clip: content-box;

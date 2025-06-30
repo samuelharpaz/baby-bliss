@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center 82%;
   padding-top: var(--spacing-700);
+  padding-inline: 1rem;
 
   display: grid;
   place-items: center;
@@ -18,22 +19,22 @@
 .hero-heading {
   /* large desktop */
   /* font-size: 20rem;  */
-  font-size: 18rem;
+  font-size: 20rem;
   font-family: var(--ff-decorative);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-slight-bold);
   line-height: 1.05;
   transform: rotate(-2deg);
-  margin-bottom: var(--spacing-600);
+  margin-bottom: var(--spacing-700);
 }
 
 .hero-subheading {
-  font-size: var(--fs-700);
+  font-size: var(--fs-750);
   font-weight: var(--fw-regular);
   font-family: var(--ff-heading);
   color: var(--clr-neutral-100);
   line-height: 1.1;
-  margin-bottom: var(--spacing-500);
+  margin-bottom: var(--spacing-900);
 }
 
 /* STAGES SECTION */
@@ -67,11 +68,19 @@
   /* align-items: center; */
 }
 
+.btn-about {
+  margin-bottom: var(--spacing-800);
+}
+
 /* TESTIMONIAL SECTION */
 
 .section-testimonials {
   padding-top: var(--spacing-800);
   padding-bottom: var(--spacing-900);
+}
+
+.container-slider {
+  --padding: var(--spacing-500);
 }
 
 .testimonial-card {
@@ -182,15 +191,6 @@
   border-radius: var(--border-radius);
 }
 
-/* JOIN MOTHERS SECTION */
-
-.section-join {
-  background-image: url(/images/crib.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
 /* TESTIMONIAL HIGHLIGHT SECTION */
 
 .section-testimonial-highlight {
@@ -221,6 +221,17 @@
 
 .section-mission {
   background: var(--clr-neutral-100);
+}
+
+/* JOIN MOTHERS SECTION */
+
+.section-join {
+  background-image: url(/images/crib.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  padding-block: var(--spacing-1000);
 }
 
 /* ////////////////////////// */

@@ -19,6 +19,8 @@ btnMobileNavToggle.addEventListener('click', function (e) {
 
 // SLIDER
 const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 32,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -33,8 +35,22 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev-unique'
   },
 
-  slidesPerView: 3,
-  spaceBetween: 96
+  breakpoints: {
+    1201: {
+      slidesPerView: 3,
+      spaceBetween: 96
+    },
+
+    737: {
+      slidesPerView: 2,
+      spaceBetween: 64
+    },
+
+    601: {
+      slidesPerView: 2,
+      spaceBetween: 32
+    }
+  }
 });
 
 // ACCORDION
