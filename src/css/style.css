@@ -48,6 +48,7 @@
   font-family: var(--ff-body);
   font-weight: 450;
   display: block;
+  margin-bottom: var(--spacing-600);
 }
 
 /* SECTION WHY */

@@ -234,6 +234,7 @@
 
   .choose {
     font-size: var(--fs-400);
+    margin-bottom: var(--spacing-700);
   }
 
   .stage-card:link,
@@ -279,6 +280,15 @@
   .testimonial-box {
     max-width: var(--component-width-constrain);
     margin-inline: auto;
+  }
+
+  .accordion-lg {
+    --_button-size: var(--fs-500);
+    --_title-size: var(--fs-550);
+  }
+
+  .accordion-lg .accordion-icon {
+    right: 8rem;
   }
 
   .pricing {
@@ -354,6 +364,15 @@
     padding-bottom: var(--spacing-700);
     font-size: 11rem;
   }
+
+  .accordion-lg {
+    --_button-size: var(--fs-400);
+    --_title-size: var(--fs-500);
+  }
+
+  .accordion-lg .accordion-icon {
+    right: 6rem;
+  }
 }
 
 /* 600px */
@@ -363,7 +382,7 @@
   }
 
   .section-hero {
-    height: calc(65svh - 10.64rem);
+    /* height: calc(65svh - 10.64rem); */
     padding-inline: 2rem;
   }
 

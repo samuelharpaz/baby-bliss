@@ -20,7 +20,7 @@
 }
 
 .accordion-lg {
-  --_button-size: var(--fs-600);
+  --_button-size: var(--fs-550);
   --_title-size: var(--fs-600);
   --_title-weight: var(--fw-slight-bold);
   --_title-family: var(--ff-heading);
@@ -145,7 +145,6 @@
 
 .accordion-lg .accordion-icon {
   position: absolute;
-  right: 12rem;
 }
 
 .accordion-icon-closed {
