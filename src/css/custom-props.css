@@ -157,7 +157,6 @@ Medium:
 @media (max-width: 37.5em) {
   :root {
     --component-width-constrain: 100%;
-    /* --component-width-constrain-narrow: 80%; */
   }
 }
 
