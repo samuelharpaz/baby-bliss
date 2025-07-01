@@ -51,8 +51,8 @@ textarea:focus {
 
 input:focus-visible,
 textarea:focus-visible {
-  outline: 4px solid var(--clr-accent-highlight-400);
-  outline-offset: 4px;
+  outline: 3px solid var(--clr-accent-highlight-400);
+  outline-offset: 3px;
 }
 
 input:not([type='checkbox'], [type='radio']) {

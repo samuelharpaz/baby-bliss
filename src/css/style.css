@@ -174,7 +174,6 @@
 }
 
 .container-about {
-  --padding: var(--spacing-500);
   margin-bottom: var(--spacing-600);
 }
 
@@ -361,7 +360,7 @@
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 
-  scroll-margin-top: 30svh;
+  scroll-margin-top: 10svh;
 }
 
 .pricing-wrapper--narrow {

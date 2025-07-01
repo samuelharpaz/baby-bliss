@@ -31,7 +31,7 @@
   }
 
   .heading-naava {
-    font-size: var(--fs-800);
+    font-size: 5.95rem;
   }
 
   .swiper-button-prev-unique {
@@ -101,12 +101,12 @@
     padding-bottom: var(--spacing-400);
   }
 
-  .container-about {
-    gap: var(--spacing-400);
+  */ .heading-naava {
+    font-size: var(--fs-750);
   }
 
-  .heading-naava {
-    font-size: var(--fs-750);
+  .container-about .col-1 {
+    padding-left: var(--spacing-100);
   }
 
   .class-wrapper {
@@ -282,7 +282,8 @@
     gap: var(--spacing-700);
   }
 
-  .container-about {
+  .container-about .col-1 {
+    padding-left: 0;
   }
 
   .container-about .col-2 {
@@ -459,7 +460,6 @@
 /* 440 px */
 @media (max-width: 27.5em) {
   .section-hero {
-    height: calc(55svh - 10.64rem);
     padding-inline: 2rem;
   }
 
@@ -472,6 +472,10 @@
     font-size: var(--fs-400);
     line-height: 1.4;
     margin-bottom: var(--spacing-500);
+  }
+
+  .heading-primary {
+    font-size: 9rem;
   }
 
   .heading-secondary {
@@ -508,6 +512,10 @@
     justify-self: center;
   }
 
+  .heading-naava {
+    font-size: 5rem;
+  }
+
   .accordion-lg {
     --_button-size: var(--fs-300);
     --_title-size: var(--fs-400);
@@ -520,7 +528,7 @@
   }
 
   .class-text p:nth-child(2 of .class-subheading) {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: var(--spacing-250);
   }
 
@@ -529,6 +537,27 @@
     max-width: 80%;
     grid-template-columns: 1fr;
   }
+
+  .grid-product-pick {
+    gap: var(--spacing-1000);
+  }
+
+  .product-pick {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-600);
+  }
+
+  .product-pick-content {
+    max-width: 90%;
+    margin-inline: auto;
+    gap: var(--spacing-400);
+  }
+
+  .product-pick-img {
+    order: -1;
+    max-width: 50%;
+    margin-inline: auto;
+  }
 }
 
 /* 352px */
@@ -536,6 +565,10 @@
   .footer-wrapper {
     padding-left: var(--spacing-500);
     margin-bottom: var(--spacing-600);
+  }
+
+  .heading-primary {
+    font-size: var(--fs-850);
   }
 
   .footer-nav {
@@ -551,6 +584,10 @@
     justify-self: stretch;
   }
 
+  .heading-naava {
+    font-size: var(--fs-700);
+  }
+
   .class-details {
     /* margin-inline: auto; */
     max-width: 100%;
@@ -558,5 +595,22 @@
 
   .pricing-wrapper--narrow .pricing {
     width: 80%;
+  }
+
+  .grid-product-pick {
+    gap: var(--spacing-900);
+  }
+
+  .product-pick {
+    gap: var(--spacing-500);
+  }
+
+  .product-pick-content {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .product-pick-img {
+    max-width: 60%;
   }
 }

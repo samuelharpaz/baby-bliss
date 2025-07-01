@@ -200,6 +200,10 @@
   position: relative !important;
 }
 
+.no-scroll {
+  overflow-y: hidden !important;
+}
+
 /* layout utility */
 
 .center {

@@ -1,6 +1,6 @@
 // KEEP COPYRIGHT UPDATED
 const yearEl = document.querySelector('.year');
-const currentYear = new Date().getFullYear() + 10;
+const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 // MOBILE NAV
@@ -15,6 +15,7 @@ btnMobileNavToggle.addEventListener('click', function (e) {
   }
 
   mainHeader.classList.toggle('nav-open');
+  document.body.classList.toggle('no-scroll');
 });
 
 // SLIDER
@@ -91,9 +92,9 @@ const dropdownVirtual = document.querySelector('.pricing-select--virtual');
 const dropdownHome = document.querySelector('.pricing-select--home');
 const btnsStage = document.querySelectorAll('[data-stage]');
 
-const classWrapper = document.querySelector('.class-wrapper');
+const classContainer = document.querySelector('.container-classes');
 
-classWrapper?.addEventListener('click', function (e) {
+classContainer?.addEventListener('click', function (e) {
   if (Array.from(btnsStage).includes(e.target)) {
     dropdownVirtual.value = e.target.dataset.stage;
     dropdownHome.value = e.target.dataset.stage;
