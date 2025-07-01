@@ -174,7 +174,8 @@
 }
 
 .container-about {
-  margin-bottom: var(--spacing-700);
+  --padding: var(--spacing-500);
+  margin-bottom: var(--spacing-600);
 }
 
 .heading-naava {
@@ -233,6 +234,7 @@
   background-attachment: fixed;
 
   padding-block: var(--spacing-1000);
+  padding-inline: var(--spacing-250);
 }
 
 /* ////////////////////////// */
@@ -364,6 +366,9 @@
 
 .pricing-wrapper--narrow {
   --max-width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-800);
 }
 
 .pricing {

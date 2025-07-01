@@ -33,6 +33,7 @@
 .accordion-panel {
   cursor: pointer;
   overflow: hidden;
+  position: relative;
   border-radius: var(--_panel-border-radius);
 
   background: var(--_bg-content);
@@ -84,6 +85,8 @@
   font-weight: var(--_title-weight);
   font-family: var(--_title-family);
   text-align: left;
+  line-height: 1.4;
+  text-wrap: pretty;
 }
 
 .accordion-lg .accordion-heading {
@@ -120,6 +123,7 @@
   display: flex;
   align-items: center;
   justify-content: var(--_button-justify);
+  gap: var(--spacing-400);
   background: transparent;
   border: 0;
   color: inherit;
@@ -134,6 +138,8 @@
 }
 
 .accordion-icon {
+  flex-shrink: 0;
+
   color: var(--_color-heading);
   width: var(--_button-size);
   aspect-ratio: 1 / 1;

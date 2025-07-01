@@ -223,9 +223,7 @@
 }
 
 .text-container {
-  --padding: var(--spacing-300);
-
-  width: min(70ch, 100% - (var(--padding) * 2));
+  width: min(70ch, 100%);
   margin-inline: auto;
 }
 

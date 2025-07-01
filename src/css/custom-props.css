@@ -160,3 +160,9 @@ Medium:
     /* --component-width-constrain-narrow: 80%; */
   }
 }
+
+@media (max-width: 27.5em) {
+  :root {
+    --component-width-constrain-narrow: 100%;
+  }
+}

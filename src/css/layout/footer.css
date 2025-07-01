@@ -11,6 +11,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-300);
+  margin-bottom: var(--spacing-700);
 }
 
 .footer-logo {
