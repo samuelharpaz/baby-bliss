@@ -41,7 +41,7 @@
 }
 
 .nav-link:hover,
-.nav-link:active {
+.nav-link:focus-visible {
   color: var(--clr-accent-highlight-400);
 }
 

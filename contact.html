@@ -36,19 +36,46 @@
               <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="about-me.html">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
                 <li class="nav-item"><a class="nav-link" href="favorite-products.html">My faves</a></li>
                 <li class="nav-item"><a class="nav-link current" href="contact.html">Contact</a></li>
               </ul>
             </nav>
             <a class="btn btn-accent-primary" href="#">Book consultation</a>
-            <button class="mobile-nav-btn" aria-controls="main-nav" aria-expanded="false">
-              <svg class="mobile-nav-icon" viewBox="0 0 100 100">
-                <rect class="line line--top" width="80" height="10" x="10" y="25" rx="5"></rect>
-                <rect class="line line--middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-                <rect class="line line--bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+
+            <button popovertarget="mobile-nav" class="mobile-nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mobile-nav-icon"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
+            <nav popover class="mobile-nav" id="mobile-nav">
+              <button popovertarget="mobile-nav" class="mobile-nav-btn mobile-nav-btn--close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="mobile-nav-icon"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-me.html">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href="favorite-products.html">My faves</a></li>
+                <li class="nav-item"><a class="nav-link current" href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>
@@ -132,7 +159,7 @@
               <h5 class="mb-1">Links</h5>
               <ul class="footer-nav-list">
                 <li><a href="about-me.html" class="footer-nav-link">About me</a></li>
-                <li><a href="services.html" class="footer-nav-link">Classes</a></li>
+                <li><a href="classes.html" class="footer-nav-link">Classes</a></li>
                 <li><a href="favorite-products.html" class="footer-nav-link">My faves</a></li>
                 <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
               </ul>
