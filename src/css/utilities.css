@@ -58,8 +58,8 @@
   color: var(--clr-neutral-700) !important;
 }
 
-.text-primary-100 {
-  color: var(--clr-primary-100) !important;
+.text-alert {
+  color: var(--clr-alert) !important;
 }
 
 /* background colors */

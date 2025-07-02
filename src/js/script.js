@@ -93,3 +93,14 @@ dropdownVirtual?.addEventListener('change', function () {
 dropdownHome?.addEventListener('change', function () {
   dropdownVirtual.value = this.value;
 });
+
+const inputTelephone = document.querySelector('#phone');
+
+console.log(inputTelephone);
+
+if (inputTelephone) {
+  window.intlTelInput(inputTelephone, {
+    loadUtils: () => import('https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js'),
+    initialCountry: 'us'
+  });
+}
