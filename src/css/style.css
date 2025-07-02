@@ -1,11 +1,11 @@
 /* HERO SECTION */
 
 .section-hero {
-  height: calc(100svh - 12.9rem);
+  min-height: calc(100svh - 12.9rem);
   background: linear-gradient(to top, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.4)), url(/images/hero.jpg);
   background-size: cover;
   background-position: center 82%;
-  padding-top: var(--spacing-700);
+  padding-block: var(--spacing-700);
   padding-inline: 1rem;
 
   display: grid;

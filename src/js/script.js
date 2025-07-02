@@ -3,21 +3,6 @@ const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-// MOBILE NAV
-const mainHeader = document.querySelector('.main-header');
-const btnMobileNavToggle = document.querySelector('.mobile-nav-btn');
-
-btnMobileNavToggle.addEventListener('click', function (e) {
-  if (this.getAttribute('aria-expanded') === 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  } else {
-    this.setAttribute('aria-expanded', 'false');
-  }
-
-  mainHeader.classList.toggle('nav-open');
-  document.body.classList.toggle('no-scroll');
-});
-
 // SLIDER
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
