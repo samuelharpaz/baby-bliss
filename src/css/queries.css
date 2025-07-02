@@ -259,7 +259,7 @@
   }
 
   .main-profile {
-    max-width: var(--component-width-constrain);
+    width: var(--component-width-constrain);
     margin-inline: auto;
     margin-bottom: var(--spacing-800);
   }

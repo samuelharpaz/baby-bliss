@@ -161,9 +161,17 @@
               <a href="about-me.html" class="btn btn-about">Learn more about me</a>
             </div>
             <img
-              srcset="/images/naava-profile-main-1x.jpg, /images/naava-profile-main-2x.jpg 2x"
+              srcset="
+                /images/naava-profile-main/naava-profile-main-lg-2x.jpg 1350w,
+                /images/naava-profile-main/naava-profile-main-lg-1x.jpg  675w,
+                /images/naava-profile-main/naava-profile-main-2x.jpg     800w,
+                /images/naava-profile-main/naava-profile-main-1x.jpg     400w,
+                /images/naava-profile-main/naava-profile-main-small.jpg  285w
+              "
+              sizes="(max-width: 37.5em) 94vw, (max-width: 59em) 71.5vw, (max-width: 75em) 30vw, 395px"
               alt="Naava"
               class="main-profile"
+              src="/images/naava-profile-main/naava-profile-main-2x.jpg"
             />
           </div>
           <div class="grid grid--2-cols">
