@@ -2,8 +2,8 @@
 
 .heading-primary {
   font-family: var(--ff-decorative);
-  color: var(--clr-accent-highlight-400);
-  background-color: rgba(236, 183, 179, 0.1);
+  color: var(--clr-accent-highlight-600);
+  background-color: var(--clr-accent-highlight-100);
   text-align: center;
   background-clip: content-box;
   padding-top: var(--spacing-700);
