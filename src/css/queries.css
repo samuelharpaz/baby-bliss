@@ -49,6 +49,14 @@
   .swiper-button-next-unique:hover {
     transform: translate(50%, -50%);
   }
+
+  .contact-container {
+    gap: var(--spacing-700);
+  }
+
+  .form-contact {
+    padding-left: var(--spacing-500);
+  }
 }
 
 /* 1200px */
@@ -350,6 +358,7 @@
   .form-contact {
     max-width: var(--component-width-constrain);
     margin-inline: auto;
+    padding-left: 0;
   }
 
   .contact-info-wrapper {
