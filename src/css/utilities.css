@@ -192,6 +192,10 @@
   margin-bottom: var(--spacing-1000) !important;
 }
 
+.mt-1 {
+  margin-top: var(--spacing-100) !important;
+}
+
 .text-center {
   text-align: center !important;
 }
