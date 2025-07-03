@@ -6,7 +6,7 @@
 
     {{> setup}}
 
-    <title>Fathers' Support - Baby Bliss by Naava</title>
+    <title>Father Support Sessions - Baby Bliss by Naava</title>
   </head>
   <body>
     <div class="page-wrapper">
@@ -16,20 +16,26 @@
         <section class="section-form text-primary-400 padding-block-lg">
           <div class="container">
             <div class="form-container">
-              <h2 class="heading-secondary mb-6">Fathers' Support</h2>
-              <form action="" method="post" class="form-schedule">
+              <h2 class="heading-secondary mb-6">Father Support</h2>
+              <form action="https://api.web3forms.com/submit" method="post" class="form">
+                <input type="hidden" name="access_key" value="59d51e0d-3c16-47d5-88eb-785436ea669b" />
+
+                <input type="hidden" id="subject" name="subject" value="New message" />
+                <input type="hidden" name="from_name" value="Father Support Sessions Request Form" />
+                <!-- <input type="hidden" name="redirect" value="https://babyblissbynaava.com/" /> -->
+
                 <div class="form-group">
                   <label for="name" class="required">Name</label>
-                  <input type="text" id="name" placeholder="Full Name" required />
+                  <input type="text" id="name" placeholder="Full Name" name="name" required />
                 </div>
                 <div class="form-group">
                   <label for="phone">Phone number</label>
-                  <input type="tel" id="phone" />
+                  <input type="tel" id="phone" name="phone" />
                 </div>
 
                 <div class="form-group">
                   <label for="email" class="required">Email</label>
-                  <input type="email" id="email" placeholder="email@gmail.com" required />
+                  <input type="email" id="email" placeholder="email@gmail.com" name="email" required />
                 </div>
                 <div class="form-group">
                   <legend for="day" class="required mb-2">Preferred call day(s) (please select one or more):</legend>
@@ -75,6 +81,9 @@
                     <p class="form-group-message mt-1"><strong>Note:</strong> All times are Pacific Standard Time</p>
                   </div>
                 </div>
+
+                <!-- honeypot -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
                 <button>Submit</button>
               </form>
