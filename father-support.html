@@ -18,11 +18,11 @@
             <div class="form-container">
               <h2 class="heading-secondary mb-6">Father Support</h2>
               <form action="https://api.web3forms.com/submit" method="post" class="form">
-                <input type="hidden" name="access_key" value="59d51e0d-3c16-47d5-88eb-785436ea669b" />
+                {{> email-key }}
 
                 <input type="hidden" id="subject" name="subject" value="New message" />
                 <input type="hidden" name="from_name" value="Father Support Sessions Request Form" />
-                <!-- <input type="hidden" name="redirect" value="https://babyblissbynaava.com/" /> -->
+                {{> redirect}}
 
                 <div class="form-group">
                   <label for="name" class="required">Name</label>
