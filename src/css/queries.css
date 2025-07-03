@@ -552,6 +552,11 @@
     max-width: 50%;
     margin-inline: auto;
   }
+
+  .city-state-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-500);
+  }
 }
 
 /* 352px */

@@ -586,3 +586,11 @@
 .product-pick-img {
   border-radius: var(--border-radius);
 }
+
+/* FORMS */
+
+.city-state-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-500);
+}
