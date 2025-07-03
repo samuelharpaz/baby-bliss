@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
     "a11y-slider": "^0.4.22",
