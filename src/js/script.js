@@ -96,11 +96,28 @@ dropdownHome?.addEventListener('change', function () {
 
 const inputTelephone = document.querySelector('#phone');
 
-console.log(inputTelephone);
-
 if (inputTelephone) {
   window.intlTelInput(inputTelephone, {
     loadUtils: () => import('https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js'),
     initialCountry: 'us'
   });
 }
+
+// HIGHLIGHT CURRENT PAGE
+// const currentPage = window.location.pathname.split('/').pop();
+const currentPage = window.location.pathname.split('/').pop();
+
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+  const href = link.getAttribute('href');
+  if (
+    href &&
+    (href === currentPage ||
+      (href === 'index.html' && currentPage === '') ||
+      (currentPage.startsWith(href) && href !== ''))
+  ) {
+    link.classList.add('current');
+  } else {
+    link.classList.remove('current');
+  }
+});
