@@ -121,3 +121,25 @@ navLinks.forEach(link => {
     link.classList.remove('current');
   }
 });
+
+// FORMS
+window.onload = function () {
+  // Reset the form fields when the page loads
+  document.querySelector('form').reset();
+};
+
+const form = document.querySelector('form');
+
+if (form) {
+  form.addEventListener('submit', function (e) {
+    const nameInput = document.querySelector('#name');
+    const userSubjectInput = document.querySelector('#user-subject');
+    const subjectInput = document.querySelector('#subject');
+
+    if (userSubjectInput?.value.trim()) {
+      subjectInput.value = `${nameInput.value.trim()}: ${userSubjectInput?.value.trim()}`;
+    } else {
+      subjectInput.value = `${subjectInput.value}: ${nameInput.value.trim()}`;
+    }
+  });
+}
