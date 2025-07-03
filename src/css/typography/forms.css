@@ -10,8 +10,7 @@
   margin-inline: auto;
 }
 
-.form-contact,
-.form-schedule {
+.form {
   display: grid;
   gap: var(--spacing-500);
 }

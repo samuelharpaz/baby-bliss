@@ -128,7 +128,7 @@ window.onload = function () {
   document.querySelector('form').reset();
 };
 
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
 
 if (form) {
   form.addEventListener('submit', function (e) {
