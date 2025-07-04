@@ -124,11 +124,11 @@
     margin-inline: auto;
   }
 
-  .class-img {
+  .class-img-container {
     margin-inline: auto;
   }
 
-  .class-wrapper:nth-child(even) > img {
+  .class-wrapper:nth-child(even) > .class-img-container {
     order: 1;
   }
 

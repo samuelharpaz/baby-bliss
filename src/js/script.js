@@ -76,8 +76,15 @@ function toggleAccordion(panelToActivate) {
 const dropdownVirtual = document.querySelector('.pricing-select--virtual');
 const dropdownHome = document.querySelector('.pricing-select--home');
 const btnsStage = document.querySelectorAll('[data-stage]');
-
 const classContainer = document.querySelector('.container-classes');
+const btnsBook = document.querySelectorAll('.btn-book');
+
+let selectedClass = sessionStorage.getItem('selectedClass');
+
+if (dropdownVirtual && dropdownHome && selectedClass) {
+  dropdownVirtual.value = selectedClass;
+  dropdownHome.value = selectedClass;
+}
 
 classContainer?.addEventListener('click', function (e) {
   if (Array.from(btnsStage).includes(e.target)) {
@@ -103,6 +110,14 @@ if (inputTelephone) {
   });
 }
 
+if (btnsBook) {
+  btnsBook.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      sessionStorage.setItem('selectedClass', dropdownVirtual.value);
+    });
+  });
+}
+
 // HIGHLIGHT CURRENT PAGE
 // const currentPage = window.location.pathname.split('/').pop();
 const currentPage = window.location.pathname.split('/').pop();
@@ -123,10 +138,6 @@ navLinks.forEach(link => {
 });
 
 // FORMS
-window.onload = function () {
-  // Reset the form fields when the page loads
-  document.querySelector('form').reset();
-};
 
 const form = document.querySelector('.form');
 
@@ -142,4 +153,10 @@ if (form) {
       subjectInput.value = `${subjectInput.value}: ${nameInput.value.trim()}`;
     }
   });
+}
+
+const classSelect = document.querySelector('#class-select');
+
+if (classSelect) {
+  classSelect.value = selectedClass;
 }
