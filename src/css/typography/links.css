@@ -1,0 +1,5 @@
+.link-email:link,
+.link-email:visited {
+  text-decoration: none;
+  color: inherit;
+}

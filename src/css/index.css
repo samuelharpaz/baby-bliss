@@ -5,6 +5,7 @@
 @import 'typography/typography.css';
 @import 'layout/header.css';
 @import 'layout/footer.css';
+@import 'typography/links.css';
 @import 'typography/button.css';
 @import 'typography/forms.css';
 @import 'components/accordion.css';
