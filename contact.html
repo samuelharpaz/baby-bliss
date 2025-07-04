@@ -47,13 +47,15 @@
                 <div class="form-group">
                   <label for="message" class="required">Message</label>
                   <textarea id="message" name="message" required></textarea>
-                  <p class="form-group-message mt-1"><span>*</span> indicates required field</p>
                 </div>
 
                 <!-- honeypot -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
-                <button type="submit">Send message</button>
+                <div class="form-footer">
+                  <button type="submit" class="mb-5">Send message</button>
+                  <p class="form-group-message"><span>*</span> indicates required field</p>
+                </div>
               </form>
             </div>
             <div class="contact-info-wrapper">
