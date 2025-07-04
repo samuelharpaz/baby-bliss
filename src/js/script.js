@@ -140,6 +140,10 @@ navLinks.forEach(link => {
 // FORMS
 
 const form = document.querySelector('.form');
+const formVirtual = document.querySelector('.form-virtual');
+const formHome = document.querySelector('.form-home');
+const messageLabel = document.querySelector('label[for=message]');
+const formGroupPregnancy = document.querySelector('#form-group-pregnancy');
 
 if (form) {
   form.addEventListener('submit', function (e) {
@@ -157,6 +161,25 @@ if (form) {
 
 const classSelect = document.querySelector('#class-select');
 
-if (classSelect) {
+if (formVirtual || formHome) {
   classSelect.value = selectedClass;
+
+  classSelect.addEventListener('change', function (e) {
+    sessionStorage.setItem('selectedClass', classSelect.value);
+
+    if (classSelect.value === 'prenatal') {
+      messageLabel.textContent = `Tell us a bit about what you would like to learn so we can best tailor your sessions:`;
+      formGroupPregnancy.classList.remove('hidden');
+    } else {
+      messageLabel.textContent = `Share a quick summary of any issues/challenges you've been dealing with so we can help tailor your
+                    solution:`;
+      formGroupPregnancy.classList.add('hidden');
+    }
+  });
+
+  if (selectedClass === 'prenatal') {
+    messageLabel.textContent = `Tell us a bit about what you would like to learn so we can best tailor your sessions:`;
+
+    formGroupPregnancy.classList.remove('hidden');
+  }
 }

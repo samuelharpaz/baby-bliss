@@ -210,6 +210,10 @@
 
 /* layout utility */
 
+.hidden {
+  display: none !important;
+}
+
 .page-wrapper {
   min-height: 100svh;
   display: grid;

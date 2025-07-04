@@ -17,7 +17,7 @@
           <div class="container">
             <div class="form-container">
               <h2 class="heading-secondary mb-6">Virtual Sessions</h2>
-              <form action="https://api.web3forms.com/submit" method="post" class="form">
+              <form action="https://api.web3forms.com/submit" method="post" class="form form-virtual">
                 {{> email-key}}
 
                 <input type="hidden" id="subject" name="subject" value="New message" />
@@ -87,6 +87,15 @@
                     <option value="prenatal">Prenatal Bonding and Sleep Foundations</option>
                     <option value="newborn">Newborn Sleep & Care</option>
                     <option value="baby">Transition Support (6&ndash;10 months)</option>
+                  </select>
+                </div>
+
+                <div class="form-group hidden" id="form-group-pregnancy">
+                  <label for="trimester-select">How far along are you in your pregnancy?</label>
+                  <select class="select" name="trimester-select" id="trimester-select">
+                    <option value="trimester-1">1st Trimester (0&ndash;13 weeks)</option>
+                    <option value="trimester-2">2nd Trimester (14&ndash;27 weeks)</option>
+                    <option value="trimester-3">3rd Trimester (28&ndash;40+ weeks)</option>
                   </select>
                 </div>
 
