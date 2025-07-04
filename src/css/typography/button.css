@@ -29,6 +29,12 @@
   color: var(--clr-primary-500);
 }
 
+.btn-primary-monochrome:hover,
+.btn-primary-monochrome:focus-visible {
+  background-color: var(--clr-primary-200);
+  color: var(--clr-primary-700);
+}
+
 .btn-accent-primary,
 .btn-accent-primary:link,
 .btn-accent-primary:visited {
@@ -42,17 +48,29 @@
   color: var(--clr-accent-primary-200);
 }
 
+.btn-accent-primary-monochrome:hover,
+.btn-accent-primary-monochrome:focus-visible {
+  background-color: var(--clr-accent-primary-200);
+  color: var(--clr-accent-primary-400);
+}
+
 .btn-accent-secondary,
 .btn-accent-secondary:link,
 .btn-accent-secondary:visited {
-  background-color: var(--clr-accent-secondary-400);
-  color: var(--clr-primary-700);
+  background-color: var(--clr-accent-secondary-500);
+  color: var(--clr-neutral-100);
 }
 
 .btn-accent-secondary:hover,
 .btn-accent-secondary:focus-visible {
-  background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-secondary-200);
+  color: var(--clr-accent-secondary-700);
+}
+
+.btn-accent-secondary-monochrome:hover,
+.btn-accent-secondary-monochrome:focus-visible {
+  background-color: var(--clr-accent-secondary-200);
+  color: var(--clr-accent-secondary-700);
 }
 
 .icon-btn {

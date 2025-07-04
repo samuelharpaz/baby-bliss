@@ -318,7 +318,7 @@
 }
 
 .class-img-container--primary::after {
-  background: radial-gradient(circle at left top, rgba(64, 90, 109, 0.35) 30%, rgba(64, 90, 109, 0) 100%);
+  background: radial-gradient(circle at left bottom, rgba(64, 90, 109, 0.3) 30%, rgba(64, 90, 109, 0) 100%);
 }
 
 .class-img-container--accent-highlight::after {
