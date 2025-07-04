@@ -168,7 +168,7 @@ if (formVirtual || formHome) {
     sessionStorage.setItem('selectedClass', classSelect.value);
 
     if (classSelect.value === 'prenatal') {
-      messageLabel.textContent = `Tell us a bit about what you would like to learn so we can best tailor your sessions:`;
+      messageLabel.textContent = `Additional comments:`;
       formGroupPregnancy.classList.remove('hidden');
     } else {
       messageLabel.textContent = `Share a quick summary of any issues/challenges you've been dealing with so we can help tailor your
@@ -178,7 +178,7 @@ if (formVirtual || formHome) {
   });
 
   if (selectedClass === 'prenatal') {
-    messageLabel.textContent = `Tell us a bit about what you would like to learn so we can best tailor your sessions:`;
+    messageLabel.textContent = `Additional comments:`;
 
     formGroupPregnancy.classList.remove('hidden');
   }
