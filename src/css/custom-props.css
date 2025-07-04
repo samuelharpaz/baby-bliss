@@ -50,12 +50,18 @@ Medium:
   --clr-primary-700: #0d1216;
 
   --clr-accent-primary-200: #faeeea;
+  --clr-accent-primary-300: #f6e4dd;
   --clr-accent-primary-400: #f4ddd5;
+  --clr-accent-primary-700: #625855;
+  --clr-accent-primary-900: #312c2b;
 
+  --clr-accent-secondary-100: #e4ebe6;
   --clr-accent-secondary-200: #c8d6cd;
   --clr-accent-secondary-400: #a4bbac;
   --clr-accent-secondary-500: #94a89b;
+  --clr-accent-secondary-600: #627067;
   --clr-accent-secondary-700: #424b45;
+  --clr-accent-secondary-900: #212522;
 
   --clr-accent-highlight-100: #fdf8f7;
   --clr-accent-highlight-400: #ecb7b3;

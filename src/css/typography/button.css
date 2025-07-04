@@ -48,10 +48,17 @@
   color: var(--clr-accent-primary-200);
 }
 
+.btn-accent-primary-monochrome,
+.btn-accent-primary-monochrome:link,
+.btn-accent-primary-monochrome:visited {
+  background-color: var(--clr-accent-primary-700);
+  color: var(--clr-accent-primary-200);
+}
+
 .btn-accent-primary-monochrome:hover,
 .btn-accent-primary-monochrome:focus-visible {
-  background-color: var(--clr-accent-primary-200);
-  color: var(--clr-accent-primary-400);
+  background-color: var(--clr-accent-primary-300);
+  color: var(--clr-accent-primary-900);
 }
 
 .btn-accent-secondary,
@@ -70,7 +77,7 @@
 .btn-accent-secondary-monochrome:hover,
 .btn-accent-secondary-monochrome:focus-visible {
   background-color: var(--clr-accent-secondary-200);
-  color: var(--clr-accent-secondary-700);
+  color: var(--clr-accent-secondary-900);
 }
 
 .icon-btn {
