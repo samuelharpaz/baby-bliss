@@ -125,15 +125,16 @@ if (btnsBook) {
 // HIGHLIGHT CURRENT PAGE
 // const currentPage = window.location.pathname.split('/').pop();
 const currentPage = window.location.pathname.split('/').pop();
-console.log(currentPage);
 
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
   const href = link.getAttribute('href');
+  console.log(href, currentPage);
 
   if (
     (href && href === currentPage) ||
     (href === 'index.html' && currentPage === '') ||
+    (href === '/' && currentPage === '') ||
     (currentPage.startsWith(href) && href !== '')
   ) {
     link.classList.add('current');
