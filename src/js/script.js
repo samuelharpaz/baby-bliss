@@ -224,3 +224,10 @@ const observer = new IntersectionObserver(scrollTopObserverCallback, scrollTopOb
 
 // Start observing the hero section
 observer.observe(sectionHero);
+
+///////////////////////////////////////
+// SCROLL TO TOP BUTTON
+
+document.querySelector('.mobile-nav').addEventListener('beforetoggle', function (e) {
+  document.body.classList.toggle('no-scroll');
+});
