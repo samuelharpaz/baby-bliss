@@ -1,8 +1,10 @@
+///////////////////////////////////////
 // KEEP COPYRIGHT UPDATED
 const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
+///////////////////////////////////////
 // SLIDER
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
@@ -39,6 +41,7 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+///////////////////////////////////////
 // ACCORDION
 
 const accordion = document.querySelector('.accordion');
@@ -71,7 +74,7 @@ function toggleAccordion(panelToActivate) {
 }
 
 ///////////////////////////////////////
-// pricing table select functionality
+// PRICING TABLE SELECT FUNCTIONALITY
 
 const dropdownVirtual = document.querySelector('.pricing-select--virtual');
 const dropdownHome = document.querySelector('.pricing-select--home');
@@ -118,6 +121,7 @@ if (btnsBook) {
   });
 }
 
+///////////////////////////////////////
 // HIGHLIGHT CURRENT PAGE
 // const currentPage = window.location.pathname.split('/').pop();
 const currentPage = window.location.pathname.split('/').pop();
@@ -137,6 +141,7 @@ navLinks.forEach(link => {
   }
 });
 
+///////////////////////////////////////
 // FORMS
 
 const form = document.querySelector('.form');
@@ -183,3 +188,39 @@ if (formVirtual || formHome) {
     formGroupPregnancy.classList.remove('hidden');
   }
 }
+
+///////////////////////////////////////
+// SCROLL TO TOP BUTTON
+const sectionHero = document.querySelector('.section-hero');
+const btnScrollTop = document.querySelector('.scroll-top');
+
+btnScrollTop.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+const scrollTopObserverOptions = {
+  root: null, // This means the viewport is the root
+  rootMargin: '200px', // No extra margin around the root
+  threshold: 0 // Trigger when 0% of the target is visible
+};
+
+const scrollTopObserverCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    // If the hero section is NOT intersecting (i.e., you've scrolled past it)
+    if (!entry.isIntersecting) {
+      btnScrollTop.classList.add('scroll-top-visible');
+    } else {
+      // If the hero section IS intersecting (i.e., you're back in it)
+      btnScrollTop.classList.remove('scroll-top-visible');
+    }
+  });
+};
+
+// Create a new Intersection Observer
+const observer = new IntersectionObserver(scrollTopObserverCallback, scrollTopObserverOptions);
+
+// Start observing the hero section
+observer.observe(sectionHero);

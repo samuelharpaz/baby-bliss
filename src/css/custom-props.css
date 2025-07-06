@@ -45,7 +45,7 @@ Medium:
 :root {
   --clr-primary-100: hsl(205, 26%, 98%);
   --clr-primary-200: hsl(205, 26%, 87%);
-  --clr-primary-400: hsl(205, 26%, 34%);
+  --clr-primary-400: rgba(64, 90, 109, 0.893);
   --clr-primary-500: hsl(205, 26%, 27%);
   --clr-primary-700: hsl(205, 26%, 15%);
 
