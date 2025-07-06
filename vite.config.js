@@ -24,5 +24,5 @@ export default {
       }
     }
   },
-  base: 'https://samuelharpaz.github.io/baby-bliss/.'
+  base: '/baby-bliss/'
 };
