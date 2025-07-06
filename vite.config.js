@@ -23,5 +23,6 @@ export default {
         fatherSupportForm: './father-support.html'
       }
     }
-  }
+  },
+  base: 'https://samuelharpaz.github.io/baby-bliss/.'
 };
