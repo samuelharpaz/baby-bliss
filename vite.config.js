@@ -23,6 +23,5 @@ export default {
         fatherSupportForm: './father-support.html'
       }
     }
-  },
-  base: '/baby-bliss/'
+  }
 };
