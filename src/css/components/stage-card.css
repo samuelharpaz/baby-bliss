@@ -33,23 +33,43 @@
 }
 
 .stage-card--1 {
-  /* background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url(/images/sneakers.jpg); */
   background-image: radial-gradient(circle at left bottom, rgba(64, 90, 109, 0.45) 50%, rgba(64, 90, 109, 0) 100%),
-    url(/images/sneakers.jpg);
+    url(/images/sneakers-1x.jpg);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 14em), (min-width: 28em) {
+  .stage-card--1 {
+    background-image: radial-gradient(circle at left bottom, rgba(64, 90, 109, 0.45) 50%, rgba(64, 90, 109, 0) 100%),
+      url(/images/sneakers-2x.jpg);
+  }
 }
 
 .stage-card--2 {
   /* background-image: linear-gradient(rgba(236, 183, 179, 0.65), rgba(236, 183, 179, 0.65)),
-    url(/images/baby-sleeping.jpg); */
+  url(/images/baby-sleeping.jpg); */
 
   background-image: radial-gradient(circle at left bottom, rgba(236, 183, 179, 0.45) 50%, rgba(236, 183, 179, 0) 100%),
-    url(/images/baby-sleeping-grayscale.jpg);
+    url(/images/baby-sleeping-grayscale-1x.jpg);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 14em), (min-width: 28em) {
+  .stage-card--2 {
+    background-image: radial-gradient(circle at left bottom, rgba(236, 183, 179, 0.45) 50%, rgba(236, 183, 179, 0) 100%),
+      url(/images/baby-sleeping-grayscale-2x.jpg);
+  }
 }
 
 .stage-card--3 {
   /* background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url(/images/baby-standing.jpg); */
   background-image: radial-gradient(circle at left bottom, rgba(164, 187, 172, 0.45) 50%, rgba(164, 187, 172, 0) 100%),
-    url(/images/baby-standing-grayscale.jpg);
+    url(/images/baby-standing-grayscale-1x.jpg);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 14em), (min-width: 28em) {
+  .stage-card--3 {
+    background-image: radial-gradient(circle at left bottom, rgba(164, 187, 172, 0.45) 50%, rgba(164, 187, 172, 0) 100%),
+      url(/images/baby-standing-grayscale-2x.jpg);
+  }
 }
 
 .stage-card span {

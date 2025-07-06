@@ -2,7 +2,7 @@
 
 .section-hero {
   min-height: calc(100svh - 12.9rem);
-  background: linear-gradient(to top, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.4)), url(/images/hero.jpg);
+  background-image: linear-gradient(to top, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.4)), url(/images/hero-1x.jpg);
   background-size: cover;
   background-position: center 82%;
   padding-block: var(--spacing-700);
@@ -10,6 +10,12 @@
 
   display: grid;
   place-items: center;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 40em), (min-width: 80em) {
+  .section-hero {
+    background-image: linear-gradient(to top, rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.4)), url(/images/hero-2x.jpg);
+  }
 }
 
 .hero-wrapper {
@@ -227,13 +233,19 @@
 /* JOIN MOTHERS SECTION */
 
 .section-join {
-  background-image: url(/images/crib.jpg);
+  background-image: url(/images/crib-1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   padding-block: var(--spacing-1000);
   padding-inline: var(--spacing-250);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 40em), (min-width: 80em) {
+  .section-join {
+    background-image: url(/images/crib-2x.jpg);
+  }
 }
 
 /* ////////////////////////// */
