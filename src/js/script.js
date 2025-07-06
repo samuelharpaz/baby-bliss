@@ -204,7 +204,7 @@ if (btnScrollTop) {
 
   const scrollTopObserverOptions = {
     root: null, // This means the viewport is the root
-    rootMargin: '800px', // No extra margin around the root
+    rootMargin: '900px', // No extra margin around the root
     threshold: 0 // Trigger when 0% of the target is visible
   };
 
