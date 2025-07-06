@@ -191,43 +191,45 @@ if (formVirtual || formHome) {
 
 ///////////////////////////////////////
 // SCROLL TO TOP BUTTON
-const sectionHero = document.querySelector('.section-hero');
+const mainHeader = document.querySelector('.main-header');
 const btnScrollTop = document.querySelector('.scroll-top');
 
-btnScrollTop.addEventListener('click', function () {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+if (btnScrollTop) {
+  btnScrollTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
-});
 
-const scrollTopObserverOptions = {
-  root: null, // This means the viewport is the root
-  rootMargin: '200px', // No extra margin around the root
-  threshold: 0 // Trigger when 0% of the target is visible
-};
+  const scrollTopObserverOptions = {
+    root: null, // This means the viewport is the root
+    rootMargin: '1000px', // No extra margin around the root
+    threshold: 0 // Trigger when 0% of the target is visible
+  };
 
-const scrollTopObserverCallback = (entries, observer) => {
-  entries.forEach(entry => {
-    // If the hero section is NOT intersecting (i.e., you've scrolled past it)
-    if (!entry.isIntersecting) {
-      btnScrollTop.classList.add('scroll-top-visible');
-    } else {
-      // If the hero section IS intersecting (i.e., you're back in it)
-      btnScrollTop.classList.remove('scroll-top-visible');
-    }
-  });
-};
+  const scrollTopObserverCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      // If the hero section is NOT intersecting (i.e., you've scrolled past it)
+      if (!entry.isIntersecting) {
+        btnScrollTop.classList.add('scroll-top-visible');
+      } else {
+        // If the hero section IS intersecting (i.e., you're back in it)
+        btnScrollTop.classList.remove('scroll-top-visible');
+      }
+    });
+  };
 
-// Create a new Intersection Observer
-const observer = new IntersectionObserver(scrollTopObserverCallback, scrollTopObserverOptions);
+  // Create a new Intersection Observer
+  const observer = new IntersectionObserver(scrollTopObserverCallback, scrollTopObserverOptions);
 
-// Start observing the hero section
-observer.observe(sectionHero);
+  // Start observing the hero section
+  observer.observe(mainHeader);
+}
 
 ///////////////////////////////////////
 // SCROLL TO TOP BUTTON
 
-document.querySelector('.mobile-nav').addEventListener('beforetoggle', function (e) {
+document.querySelector('.mobile-nav')?.addEventListener('beforetoggle', function (e) {
   document.body.classList.toggle('no-scroll');
 });
