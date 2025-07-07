@@ -13,7 +13,7 @@ export default {
       input: {
         main: './index.html',
         about: './about-me.html',
-        classes: './classes.html',
+        workshops: './workshops.html',
         faves: './favorite-products.html',
         contact: './contact.html',
         virtualForm: './virtual-sessions.html',

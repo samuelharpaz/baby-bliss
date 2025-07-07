@@ -30,8 +30,16 @@
   color: var(--clr-accent-primary-400) !important;
 }
 
+.text-accent-primary-500 {
+  color: var(--clr-accent-primary-500) !important;
+}
+
 .text-accent-secondary-400 {
   color: var(--clr-accent-secondary-400) !important;
+}
+
+.text-accent-secondary-700 {
+  color: var(--clr-accent-secondary-700) !important;
 }
 
 .text-accent-highlight-400 {
@@ -40,6 +48,14 @@
 
 .text-accent-highlight-500 {
   color: var(--clr-accent-highlight-500) !important;
+}
+
+.text-accent-highlight-600 {
+  color: var(--clr-accent-highlight-600) !important;
+}
+
+.text-accent-highlight-700 {
+  color: var(--clr-accent-highlight-700) !important;
 }
 
 .text-accent-highlight-2-400 {

@@ -52,17 +52,22 @@ Medium:
   /* --clr-accent-primary-200: hsl(15, 58%, 95%); */
   /* --clr-accent-primary-300: hsl(15, 58%, 92%); */
   --clr-accent-primary-400: hsl(15, 58%, 90%);
+  --clr-accent-primary-500: hsl(15, 58%, 60%);
   --clr-accent-primary-700: hsl(15, 58%, 35%);
   --clr-accent-primary-900: hsl(15, 58%, 15%);
 
-  --clr-accent-secondary-200: hsl(141, 14%, 90%);
+  --clr-accent-secondary-200: hsl(141, 14%, 85%);
   --clr-accent-secondary-400: hsl(141, 14%, 69%);
-  --clr-accent-secondary-700: hsl(141, 14%, 35%);
+  --clr-accent-secondary-700: hsl(141, 14%, 40%);
   --clr-accent-secondary-900: hsl(141, 14%, 15%);
 
   --clr-accent-highlight-100: #fdf8f7;
+  --clr-accent-highlight-200: hsl(4, 60%, 87%);
   --clr-accent-highlight-400: #ecb7b3;
   --clr-accent-highlight-600: #d4a5a1;
+  --clr-accent-highlight-650: hsl(5, 37%, 68%);
+  --clr-accent-highlight-700: #bf7a73;
+  --clr-accent-highlight-900: hsl(5, 37%, 25%);
 
   --clr-accent-highlight-2-400: #e0dad1;
 

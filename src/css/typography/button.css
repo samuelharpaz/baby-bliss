@@ -55,17 +55,17 @@
   color: var(--clr-neutral-100);
 }
 
-.btn-accent-primary-monochrome,
-.btn-accent-primary-monochrome:link,
-.btn-accent-primary-monochrome:visited {
-  background-color: var(--clr-accent-primary-700);
+.btn-accent-highlight-monochrome,
+.btn-accent-highlight-monochrome:link,
+.btn-accent-highlight-monochrome:visited {
+  background-color: var(--clr-accent-highlight-650);
   color: var(--clr-neutral-100);
 }
 
-.btn-accent-primary-monochrome:hover,
-.btn-accent-primary-monochrome:focus-visible {
-  background-color: var(--clr-accent-primary-400);
-  color: var(--clr-accent-primary-900);
+.btn-accent-highlight-monochrome:hover,
+.btn-accent-highlight-monochrome:focus-visible {
+  background-color: var(--clr-accent-highlight-200);
+  color: var(--clr-accent-highlight-900);
 }
 
 .btn-accent-secondary-monochrome,
