@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{> setup}}
+
+    <title>Success - Baby Bliss by Naava</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {{> header}} {{> scroll-to-top}}
+
+      <main class="bg-accent-highlight-2-400">
+        <section class="section-success text-primary-400">
+          <div class="container success-wrapper">
+            <div class="success text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="success-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+
+              <h2 class="heading-success mb-1">Thank you!</h2>
+              <p class="success-text mb-5">Your form has been successfully submitted. We will be in touch soon!</p>
+              <a class="btn" href="index.html">Back to home</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {{> footer}}
+    </div>
+  </body>
+</html>

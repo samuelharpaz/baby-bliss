@@ -153,3 +153,11 @@ input[type='checkbox'],
 input[type='radio'] {
   text-box: trim-both cap alphabetic;
 }
+
+/* SUBMISSION SUCCESS PAGE */
+
+.success-wrapper {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
