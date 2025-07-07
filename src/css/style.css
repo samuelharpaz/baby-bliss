@@ -242,6 +242,10 @@
   padding-inline: var(--spacing-250);
 }
 
+@supports (background-attachment: fixed;) {
+  background-attachment: fixed;
+}
+
 @media (min-resolution: 192dpi) and (min-width: 40em), (min-width: 80em) {
   .section-join {
     background-image: url(/images/crib-2x.jpg);
