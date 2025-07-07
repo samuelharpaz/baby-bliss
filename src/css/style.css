@@ -242,7 +242,7 @@
   padding-inline: var(--spacing-250);
 }
 
-@supports (background-attachment: fixed;) {
+@supports (background-attachment: fixed) {
   .section-join {
     background-attachment: fixed;
   }
