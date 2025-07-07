@@ -6,7 +6,7 @@
 
     {{> setup}}
 
-    <title>Virtual Sessions - Baby Bliss by Naava</title>
+    <title>In-Person Workshop - Baby Bliss by Naava</title>
   </head>
   <body>
     <div class="page-wrapper">
@@ -16,12 +16,12 @@
         <section class="section-form text-primary-400 padding-block-lg">
           <div class="container">
             <div class="form-container">
-              <h2 class="heading-secondary mb-6">Virtual Sessions</h2>
-              <form action="https://api.web3forms.com/submit" method="post" class="form form-virtual">
-                {{> email-key}}
+              <h2 class="heading-secondary mb-6">In-Person Workshop</h2>
+              <form action="https://api.web3forms.com/submit" method="post" class="form form-home">
+                {{> email-key }}
 
                 <input type="hidden" id="subject" name="subject" value="New message" />
-                <input type="hidden" name="from_name" value="Virtual Sessions Request Form" />
+                <input type="hidden" name="from_name" value="Home Sessions Request Form" />
                 {{> redirect}}
 
                 <div class="form-group">
@@ -29,8 +29,78 @@
                   <input type="text" id="name" placeholder="Full Name" name="name" required />
                 </div>
                 <div class="form-group">
-                  <label for="phone" class="required">Phone number</label>
-                  <input type="tel" id="phone" name="phone" required />
+                  <label for="phone-usa" class="required">Phone number</label>
+                  <input type="tel" id="phone-usa" placeholder="(555)123-4567" name="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="address" class="required">Street Address</label>
+                  <input type="text" placeholder="140 Brook Lane" id="address" name="address" required />
+                </div>
+                <div class="city-state-wrapper">
+                  <div class="form-group">
+                    <label for="city" class="required">City</label>
+                    <input type="text" id="city" name="city" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="state" class="required">State</label>
+                    <select class="select" name="state" id="state" required>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="zip" class="required">Zip</label>
+                  <input type="text" id="zip" maxlength="5" class="max-length-input" size="5" name="zip" required />
                 </div>
                 <div class="form-group">
                   <label for="email" class="required">Email</label>
@@ -39,6 +109,10 @@
                 <div class="form-group">
                   <legend for="day" class="required mb-2">Preferred call day(s) (please select one or more):</legend>
                   <div class="checkbox-group-wrapper">
+                    <div class="check-group">
+                      <input type="checkbox" id="day" name="day" value="sunday" />
+                      <label for="sunday">Sunday</label>
+                    </div>
                     <div class="check-group">
                       <input type="checkbox" id="day" name="day" value="monday" />
                       <label for="monday">Monday</label>
@@ -54,6 +128,10 @@
                     <div class="check-group">
                       <input type="checkbox" id="day" name="day" value="thursday" />
                       <label for="thursday">Thursday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="day" name="day" value="friday" />
+                      <label for="friday">Friday</label>
                     </div>
                     <p class="form-group-message mt-1">
                       Choose a few days that work for a quick initial phone call to connect, answer questions, and get
@@ -77,7 +155,7 @@
                       <input type="checkbox" id="evenings" name="time" value="evenings" />
                       <label for="evenings">8:30pm&ndash;10pm</label>
                     </div>
-                    <p class="form-group-message mt-1"><strong>Note:</strong> All times are Pacific Standard Time</p>
+                    <p class="form-group-message mt-1"><strong>Note: All times are Pacific Standard Time</strong></p>
                   </div>
                 </div>
 
@@ -143,7 +221,7 @@
 
                 <div class="form-group">
                   <label for="message"
-                    >Share a quick summary of any issues/challenges you've been dealing with so we can help tailor your
+                    >Share a quick summary of any specific challenges you've been facing so we can best tailor your
                     solution:</label
                   >
                   <textarea id="message" name="message"></textarea>

@@ -178,7 +178,7 @@ if (formVirtual || formHome) {
       messageLabel.textContent = `Additional comments:`;
       formGroupPregnancy.classList.remove('hidden');
     } else {
-      messageLabel.textContent = `Share a quick summary of any issues/challenges you've been dealing with so we can help tailor your
+      messageLabel.textContent = `Share a quick summary of any specific challenges you've been facing so we can best tailor your
                     solution:`;
       formGroupPregnancy.classList.add('hidden');
     }
