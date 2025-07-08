@@ -29,6 +29,17 @@
   color: var(--clr-primary-700);
 }
 
+.btn-white:link,
+.btn-white:visited {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary-500);
+}
+.btn-white:hover,
+.btn-white:focus-visible {
+  background-color: var(--clr-primary-200);
+  color: var(--clr-primary-700);
+}
+
 .btn-primary-monochrome,
 .btn-primary-monochrome:link,
 .btn-primary-monochrome:visited {
