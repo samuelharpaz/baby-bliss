@@ -20,7 +20,10 @@ export default {
         homeForm: './in-person-workshop.html',
         scheduleCallForm: './schedule-call.html',
         followUpForm: './follow-up-session.html',
-        fatherSupportForm: './father-support.html'
+        fatherSupportForm: './father-support.html',
+        babyBlissBracelet: './baby-bliss-bracelet.html',
+        // custom404: './404.html',
+        submissionSuccess: './submission-success.html'
       }
     }
   }

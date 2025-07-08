@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{> setup }}
+
+    <title>Schedule a Call - Baby Bliss by Naava</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {{> header }} {{> scroll-to-top}}
+
+      <main class="bg-accent-highlight-2-400">
+        <div class="section-form text-primary-400 padding-block-lg">
+          <div class="container">
+            <div class="form-container">
+              <h2 class="heading-secondary mb-6">Bracelet Order Form</h2>
+              <div class="form-group mb-4">
+                <label for="bracelet-amount-select" class="mb-1">Select package:</label>
+                <select class="select" name="bracelet-amount-select" id="bracelet-amount-select">
+                  <option value="one">1 For $10.00 USD</option>
+                  <option value="two">2 For $15.00 USD</option>
+                </select>
+              </div>
+              <a href="https://buy.stripe.com/8x2aEWcFt7yy3l2fjrfIs00" class="btn btn-bracelet">Track with love</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {{> footer }}
+    </div>
+  </body>
+</html>

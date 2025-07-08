@@ -235,3 +235,16 @@ if (btnScrollTop) {
 document.querySelector('.mobile-nav')?.addEventListener('beforetoggle', function (e) {
   document.body.classList.toggle('no-scroll');
 });
+
+///////////////////////////////////////
+// BRACELET FORM
+const braceletAmountSelect = document.querySelector('#bracelet-amount-select');
+const btnBracelet = document.querySelector('.btn-bracelet');
+
+braceletAmountSelect?.addEventListener('change', function () {
+  if (this.value === 'two') {
+    btnBracelet?.setAttribute('href', 'https://buy.stripe.com/5kQ8wO20P1aaf3Kb3bfIs01');
+  } else if (this.value === 'one') {
+    btnBracelet?.setAttribute('href', 'https://buy.stripe.com/8x2aEWcFt7yy3l2fjrfIs00');
+  }
+});
