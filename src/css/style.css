@@ -680,4 +680,9 @@ visible */
 /* DISCLAIMER/LEGAL */
 .container-legal h3 {
   line-height: 1;
+  margin-bottom: var(--spacing-200);
+}
+
+.container-legal p:has(+ h3) {
+  margin-bottom: var(--spacing-400);
 }
