@@ -23,7 +23,8 @@ export default {
         fatherSupportForm: './father-support.html',
         babyBlissBracelet: './baby-bliss-bracelet.html',
         // custom404: './404.html',
-        submissionSuccess: './submission-success.html'
+        submissionSuccess: './submission-success.html',
+        disclaimer: './disclaimer.html'
       }
     }
   }

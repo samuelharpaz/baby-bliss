@@ -166,12 +166,6 @@
   fill: var(--clr-neutral-100);
 }
 
-.copyright {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  color: #707070;
-}
-
 /* ////////////////////////// */
 /* ABOUT PAGE */
 
@@ -681,4 +675,9 @@ visible */
   100% {
     background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/mobile.jpg'); /* Quickly transition back to image 1 (for seamless loop) */
   }
+}
+
+/* DISCLAIMER/LEGAL */
+.container-legal h3 {
+  line-height: 1;
 }
