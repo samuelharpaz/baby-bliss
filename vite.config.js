@@ -25,7 +25,8 @@ export default {
         custom404: './404.html',
         submissionSuccess: './submission-success.html',
         disclaimer: './disclaimer.html',
-        terms: './terms.html'
+        terms: './terms.html',
+        privacy: './privacy.html'
       }
     }
   }
