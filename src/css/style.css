@@ -655,26 +655,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-fade 12s ease-in-out infinite;
+  animation: background-fade 25s ease-in-out infinite;
 }
 @keyframes background-fade {
   0% {
-    background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/mobile.jpg'); /* Start
+    background-image: url('/images/mobile.jpg'); /* Start
 with image 1 */
   }
-  40% {
-    background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/mobile.jpg'); /* Image 1 remains visible */
+  35% {
+    background-image: url('/images/mobile.jpg'); /* Image 1 remains visible */
   }
   50% {
-    background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/xylophone.jpg'); /* Transition to image 2 */
+    background-image: url('/images/xylophone.jpg'); /* Transition to image 2 */
   }
-  90% {
-    background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/xylophone.jpg'); /* Image 2 remains
+  85% {
+    background-image: url('/images/xylophone.jpg'); /* Image 2 remains
 visible */
   }
   100% {
-    background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65)), url('/images/mobile.jpg'); /* Quickly transition back to image 1 (for seamless loop) */
+    background-image: url('/images/mobile.jpg'); /* Quickly transition back to image 1 (for seamless loop) */
   }
+}
+
+.container-find {
+  background-image: linear-gradient(rgba(64, 90, 109, 0.65), rgba(64, 90, 109, 0.65));
 }
 
 /* DISCLAIMER/LEGAL */
