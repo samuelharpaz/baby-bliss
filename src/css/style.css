@@ -686,3 +686,8 @@ visible */
 .container-legal p:has(+ h3) {
   margin-bottom: var(--spacing-400);
 }
+
+.container-legal ul {
+  margin-bottom: var(--spacing-400);
+  padding-inline-start: var(--spacing-300);
+}
