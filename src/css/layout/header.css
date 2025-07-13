@@ -103,9 +103,10 @@
 }
 
 .mobile-nav-icon {
-  width: var(--spacing-500);
+  width: var(--spacing-550);
   aspect-ratio: 1;
   fill: var(--clr-primary-400);
+  stroke-width: 1.7 !important;
 }
 
 .mobile-nav-btn--close {
