@@ -692,6 +692,23 @@ visible */
 }
 
 .container-legal ul {
-  margin-bottom: var(--spacing-400);
   padding-inline-start: var(--spacing-300);
+}
+
+.container-legal ul:has(+ h3) {
+  margin-bottom: var(--spacing-400);
+}
+
+.container-legal ul:has(+ h4) {
+  margin-bottom: var(--spacing-300);
+}
+
+.container-legal ul:has(+ p) {
+  margin-bottom: var(--spacing-200);
+}
+
+.container-legal h4 {
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  margin-bottom: var(--spacing-100);
 }

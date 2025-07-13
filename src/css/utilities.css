@@ -168,6 +168,10 @@
   padding-bottom: var(--spacing-800);
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .mb-1 {
   margin-bottom: var(--spacing-100) !important;
 }
