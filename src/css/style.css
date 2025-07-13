@@ -388,7 +388,18 @@
   display: inline-block;
   /* margin-right: 0.4rem; */
   text-box: trim-both cap alphabetic;
-  /* filter: invert(31%) sepia(55%) saturate(310%) hue-rotate(162deg) brightness(90%) contrast(85%); */
+}
+
+.class-details--1 .class-detail::before {
+  filter: invert(31%) sepia(55%) saturate(310%) hue-rotate(162deg) brightness(90%) contrast(85%);
+}
+
+.class-details--2 .class-detail::before {
+  filter: invert(58%) sepia(5%) saturate(3141%) hue-rotate(317deg) brightness(92%) contrast(84%);
+}
+
+.class-details--3 .class-detail::before {
+  filter: invert(43%) sepia(15%) saturate(581%) hue-rotate(89deg) brightness(95%) contrast(86%);
 }
 
 /* PRICING SECTION */
