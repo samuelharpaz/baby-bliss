@@ -388,6 +388,7 @@
   display: inline-block;
   /* margin-right: 0.4rem; */
   text-box: trim-both cap alphabetic;
+  /* filter: invert(31%) sepia(55%) saturate(310%) hue-rotate(162deg) brightness(90%) contrast(85%); */
 }
 
 /* PRICING SECTION */

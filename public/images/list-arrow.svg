@@ -1,11 +1,11 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 
-    
+
       <!-- More rounded version using curves, if preferred. Uncomment and replace the above path: -->
       <path
         d="M8 5 C7.5 5 7 5.5 7 6 L7 18 C7 18.5 7.5 19 8 19 L16 12.5 C16.2 12.3 16.2 11.7 16 11.5 L8 5Z"
         stroke="none"
         fill="currentColor"
       />
-   
+
 </svg>
