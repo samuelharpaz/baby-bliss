@@ -22,6 +22,7 @@ export default {
         followUpForm: './follow-up-session.html',
         fatherSupportForm: './father-support.html',
         babyBlissBracelet: './baby-bliss-bracelet.html',
+        giftCard: './gift-card.html',
         custom404: './404.html',
         submissionSuccess: './submission-success.html',
         disclaimer: './disclaimer.html',

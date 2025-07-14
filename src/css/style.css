@@ -747,6 +747,11 @@ visible */
 
 /* SECTION WALKTHROUGH (gift cards page) */
 
+.section-walkthrough {
+  padding-top: var(--spacing-500);
+  padding-bottom: var(--spacing-800);
+}
+
 .walkthrough-list {
   display: flex;
   flex-direction: column;
