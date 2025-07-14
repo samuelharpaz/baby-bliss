@@ -9,3 +9,8 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+.link-virtual:link,
+.link-virtual:visited {
+  text-decoration: underline;
+}
