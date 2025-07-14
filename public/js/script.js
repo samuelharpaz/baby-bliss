@@ -248,3 +248,20 @@ braceletAmountSelect?.addEventListener('change', function () {
     btnBracelet?.setAttribute('href', 'https://buy.stripe.com/8x2aEWcFt7yy3l2fjrfIs00');
   }
 });
+
+///////////////////////////////////////
+// GIFT CARD FORM
+const recipientZip = document.querySelector('.form-group--recipient-zip');
+const workshopRadios = document.querySelectorAll('input[name="workshop"]');
+
+if (workshopRadios) {
+  workshopRadios.forEach(radio => {
+    radio.addEventListener('change', function (e) {
+      if (e.target.checked && e.target.value === 'in-person') {
+        recipientZip.classList.remove('hidden');
+      } else if (e.target.checked && e.target.value === 'virtual') {
+        recipientZip.classList.add('hidden');
+      }
+    });
+  });
+}

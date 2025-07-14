@@ -82,3 +82,7 @@ p:last-child {
   margin-left: 0.3rem;
   vertical-align: super;
 }
+
+br {
+  height: 1px;
+}

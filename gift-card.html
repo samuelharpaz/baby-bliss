@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{> setup}}
+
+    <title>Gift Cards - Baby Bliss by Naava</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {{> header}} {{> scroll-to-top}}
+
+      <main>
+        <section class="section-walkthrough bg-primary-100 padding-block-lg">
+          <div class="container">
+            <div class="text-container">
+              <h2 class="heading-secondary mb-5">Baby Bliss Gift Cards</h2>
+              <p>Gifting a Baby Bliss gift voucher for a loved one is gifting rest and peace of mind.</p>
+              <p>
+                We offer beautifully designed virtual gift cards which upon purchase will be sent to the recipient via
+                email.
+              </p>
+              <p class="mb-4">The process is just a few simple steps:</p>
+              <ol class="walkthrough-list mb-4">
+                <li>
+                  Choose between two options, the virtual workshop (over phone/video call), or the in-person workshop.
+                  <strong>
+                    Please note that the in-person option is only available in select zip codes in Los Angeles,
+                    California.
+                  </strong>
+                </li>
+                <li>
+                  Fill out the form below, including your own information as well as the full name and email address of
+                  the recipient.
+                </li>
+                <li>
+                  We will double-check that all the information is in order (if necessary, we will contact you to make
+                  sure everything is correct).
+                </li>
+                <li>
+                  We will send you a payment link to purchase the gift card. Upon payment completion, you will receive a
+                  confirmation email. The gift card will be sent to the recipient's email as a gift in your name, along
+                  with all the information needed to set up the workshop!
+                </li>
+              </ol>
+              <p>For any questions, please contact me at (323)840-4802.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-form bg-accent-primary-400 text-primary-400 padding-block-lg">
+          <div class="container">
+            <div class="form-container">
+              <h2 class="heading-secondary mb-6">Gift Card Order Form</h2>
+              <form action="https://api.web3forms.com/submit" method="post" class="form-gift-card">
+                {{> email-key}}
+
+                <input type="hidden" id="subject" name="subject" value="New message" />
+                <input type="hidden" name="from_name" value="Gift Card Order Form" />
+                {{> redirect}}
+
+                <div class="form-group mb-5">
+                  <legend for="day" class="required mb-2">Which workshop option would you like to purchase?</legend>
+                  <div class="radio-group-wrapper">
+                    <div class="radio-group">
+                      <input type="radio" id="virtual" name="workshop" value="virtual" />
+                      <label for="virtual">Virtual (phone/video call)</label>
+                    </div>
+                    <div class="radio-group">
+                      <input type="radio" id="in-person" name="workshop" value="in-person" />
+                      <label for="in-person">In-person</label>
+                    </div>
+                  </div>
+                  <p class="form-group-message mt-1">
+                    <strong
+                      >Reminder: In-person option is only available for select Los Angeles zip codes. If you select this
+                      option, please ensure the recipient lives in one of these zip codes and enter it below.</strong
+                    >
+                  </p>
+                </div>
+
+                <h3 class="mb-4">Your information</h3>
+                <div class="form-group-container mb-6">
+                  <div class="form-group">
+                    <label for="name" class="required">Your name</label>
+                    <input type="text" id="name" placeholder="Full Name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="required">Your phone number</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="required">Your email</label>
+                    <input type="email" id="email" placeholder="email@gmail.com" name="email" required />
+                  </div>
+                </div>
+
+                <h3 class="mb-4">Recipient information</h3>
+                <div class="form-group-container mb-6">
+                  <div class="form-group">
+                    <label for="recipient-name" class="required">Recipient name</label>
+                    <input
+                      type="text"
+                      id="recipient-name"
+                      placeholder="Recipient full name"
+                      name="recipient-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-email" class="required">Recipient email</label>
+                    <input
+                      type="email"
+                      id="recipient-email"
+                      placeholder="email@gmail.com"
+                      name="recipient-email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form-group--recipient-zip hidden">
+                    <label for="recipient-zip" class="required">Recipient zip code</label>
+                    <input
+                      type="text"
+                      id="recipient-zip"
+                      maxlength="5"
+                      class="max-length-input"
+                      size="5"
+                      name="recipient-zip"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group mb-6">
+                  <label for="message">Additional comments:</label>
+                  <textarea id="message" name="message"></textarea>
+                </div>
+
+                <!-- honeypot -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+                <div class="form-footer">
+                  <button type="submit" class="mb-5">Submit</button>
+                  <p class="form-group-message"><span>*</span> indicates required field</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {{> footer}}
+    </div>
+  </body>
+</html>

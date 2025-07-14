@@ -15,6 +15,11 @@
   gap: var(--spacing-500);
 }
 
+.form-group-container {
+  display: grid;
+  gap: var(--spacing-400);
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
