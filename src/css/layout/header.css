@@ -96,7 +96,11 @@
 
 .mobile-nav-btn {
   border: none;
-  background: none;
+  background: var(--clr-primary-400);
+  padding: var(--spacing-150);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
 
   display: none;
@@ -105,12 +109,13 @@
 .mobile-nav-icon {
   width: var(--spacing-550);
   aspect-ratio: 1;
-  fill: var(--clr-primary-400);
+  fill: ;
+  stroke: var(--clr-neutral-100);
   stroke-width: 1.7 !important;
 }
 
 .mobile-nav-btn--close {
   position: absolute;
-  top: var(--spacing-500);
+  top: var(--spacing-400);
   right: var(--spacing-400);
 }
