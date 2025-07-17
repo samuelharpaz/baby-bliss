@@ -147,8 +147,7 @@ navLinks.forEach(link => {
 // FORMS
 
 const form = document.querySelector('.form');
-const formVirtual = document.querySelector('.form-virtual');
-const formHome = document.querySelector('.form-home');
+const formWorkshop = document.querySelector('.form-workshop');
 const messageLabel = document.querySelector('label[for=message]');
 const formGroupPregnancy = document.querySelector('#form-group-pregnancy');
 
@@ -168,7 +167,7 @@ if (form) {
 
 const classSelect = document.querySelector('#class-select');
 
-if (formVirtual || formHome) {
+if (formWorkshop) {
   classSelect.value = selectedClass;
 
   classSelect.addEventListener('change', function (e) {
@@ -261,6 +260,28 @@ if (workshopRadios) {
         recipientZip.classList.remove('hidden');
       } else if (e.target.checked && e.target.value === 'virtual') {
         recipientZip.classList.add('hidden');
+      }
+    });
+  });
+}
+///////////////////////////////////////
+// WORKSHOP FORM
+const addressFormGroup = document.querySelector('.address-group');
+const localAddress = document.querySelector('.local-address');
+const localZip = document.querySelector('.local-zip');
+const inPersonRadios = document.querySelectorAll('input[name="in-person"]');
+
+if (inPersonRadios) {
+  inPersonRadios.forEach(radio => {
+    radio.addEventListener('change', function (e) {
+      if (e.target.checked && e.target.value === 'yes') {
+        addressFormGroup.classList.remove('hidden');
+        localAddress.required = true;
+        localZip.required = true;
+      } else if (e.target.checked && e.target.value === 'no') {
+        addressFormGroup.classList.add('hidden');
+        localAddress.required = false;
+        localZip.required = false;
       }
     });
   });
