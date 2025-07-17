@@ -249,22 +249,6 @@ braceletAmountSelect?.addEventListener('change', function () {
 });
 
 ///////////////////////////////////////
-// GIFT CARD FORM
-const recipientZip = document.querySelector('.form-group--recipient-zip');
-const workshopRadios = document.querySelectorAll('input[name="workshop"]');
-
-if (workshopRadios) {
-  workshopRadios.forEach(radio => {
-    radio.addEventListener('change', function (e) {
-      if (e.target.checked && e.target.value === 'in-person') {
-        recipientZip.classList.remove('hidden');
-      } else if (e.target.checked && e.target.value === 'virtual') {
-        recipientZip.classList.add('hidden');
-      }
-    });
-  });
-}
-///////////////////////////////////////
 // WORKSHOP FORM
 const addressFormGroup = document.querySelector('.address-group');
 const localAddress = document.querySelector('.local-address');

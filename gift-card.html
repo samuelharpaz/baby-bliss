@@ -16,36 +16,33 @@
         <section class="section-walkthrough bg-primary-100 text-primary-700 padding-block-lg">
           <div class="container">
             <div class="text-container">
-              <h2 class="heading-secondary mb-5">Baby Bliss Gift Cards</h2>
-              <p>Gifting a Baby Bliss gift card to a loved one is gifting peace of mind.</p>
+              <h2 class="heading-secondary">Baby Bliss Gift Cards</h2>
               <p>
-                We offer beautifully designed virtual gift cards which upon purchase will be sent to the recipient via
-                email.
+                We offer a beautifully designed virtual gift card which upon purchase will be sent to the recipient (via
+                email).
               </p>
               <p class="mb-4">The process is just a few simple steps:</p>
               <ol class="walkthrough-list mb-4">
-                <li>
-                  Choose between two options, the virtual workshop (over phone/video call), or the in-person workshop.
-                  <strong>
-                    Please note that the in-person option is only available in select zip codes in Los Angeles,
-                    California.
-                  </strong>
-                </li>
                 <li>
                   Fill out the form below, including your own information as well as the full name and email address of
                   the recipient.
                 </li>
                 <li>
-                  We will double-check that all the information is in order (if necessary, we will contact you to make
-                  sure everything is correct).
+                  Along with the regular workshop which is typically given via phone or video call and can be taken
+                  anywhere,
+                  <strong>in-person sessions are available in select areas in Los Angeles, California</strong> (for an
+                  additional fee). If the recipient lives or will be in the vicinity and you would like to offer them
+                  the option of in-person sessions, simply indicate this in the comments box at the bottom of the form
+                  along with the recipient's exact address. We will check if it's possible to accommodate this request,
+                  and of course get back to you.
                 </li>
                 <li>
-                  We will send you a payment link to purchase the gift card. Upon payment completion, you will receive a
-                  confirmation email. The gift card will be sent to the recipient's email as a gift in your name, along
-                  with all the information needed to set up the workshop!
+                  We will send you a payment link to purchase the gift card. Upon payment completion, the gift card will
+                  be sent to the recipient's email as a gift in your name, along with all the information they need to
+                  set up the workshop!
                 </li>
               </ol>
-              <p>For any questions, please contact me at (323)840-4802.</p>
+              <p>For any questions, just contact me at (323)840-4802.</p>
             </div>
           </div>
         </section>
@@ -60,26 +57,6 @@
                 <input type="hidden" id="subject" name="subject" value="New message" />
                 <input type="hidden" name="from_name" value="Gift Card Order Form" />
                 {{> redirect}}
-
-                <div class="form-group mb-5">
-                  <legend for="day" class="required mb-2">Which workshop option would you like to purchase?</legend>
-                  <div class="radio-group-wrapper">
-                    <div class="radio-group">
-                      <input type="radio" id="virtual" name="workshop" value="virtual" />
-                      <label for="virtual">Virtual (phone/video call)</label>
-                    </div>
-                    <div class="radio-group">
-                      <input type="radio" id="in-person" name="workshop" value="in-person" />
-                      <label for="in-person">In-person</label>
-                    </div>
-                  </div>
-                  <p class="form-group-message mt-1 text-primary-700">
-                    <strong
-                      >Reminder: In-person option is only available for select Los Angeles zip codes. If you select this
-                      option, please ensure the recipient lives in one of these zip codes and enter it below.</strong
-                    >
-                  </p>
-                </div>
 
                 <h3 class="mb-4">Your information</h3>
                 <div class="form-group-container mb-6">
@@ -119,23 +96,15 @@
                       required
                     />
                   </div>
-                  <div class="form-group form-group--recipient-zip hidden">
-                    <label for="recipient-zip" class="required">Recipient zip code</label>
-                    <input
-                      type="text"
-                      id="recipient-zip"
-                      maxlength="5"
-                      class="max-length-input"
-                      size="5"
-                      name="recipient-zip"
-                      required
-                    />
-                  </div>
                 </div>
 
                 <div class="form-group mb-6">
                   <label for="message">Additional comments:</label>
-                  <textarea id="message" name="message"></textarea>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="e.g. I would like the in-person workshop if possible"
+                  ></textarea>
                 </div>
 
                 <!-- honeypot -->
