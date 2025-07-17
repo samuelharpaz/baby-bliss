@@ -93,6 +93,10 @@ input[type='radio'] {
   accent-color: rgba(255, 255, 255, 0.7);
 }
 
+input[readonly] {
+  pointer-events: none;
+}
+
 select {
   border: none;
   color: var(--clr-primary-400);

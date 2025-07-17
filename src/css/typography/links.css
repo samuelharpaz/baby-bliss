@@ -10,7 +10,7 @@ a:visited {
   color: inherit;
 }
 
-.link-virtual:link,
-.link-virtual:visited {
+.link-to-form:link,
+.link-to-form:visited {
   text-decoration: underline;
 }
