@@ -441,6 +441,8 @@
 }
 
 .recommended {
+  max-width: 48rem;
+  margin-inline: auto;
   box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.2);
 }
 
@@ -526,6 +528,8 @@
   color: var(--clr-primary-400);
   stroke-width: 2.5;
   flex-shrink: 0;
+  position: relative;
+  top: 2px;
 }
 
 .pricing-select {

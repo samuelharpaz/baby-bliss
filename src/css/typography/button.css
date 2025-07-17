@@ -9,7 +9,7 @@
   cursor: pointer;
   border: 0;
   border-radius: var(--border-radius);
-  padding: var(--spacing-250) var(--spacing-400);
+  padding: var(--spacing-250) var(--spacing-300);
   font-weight: var(--fw-semibold);
   line-height: 1;
 

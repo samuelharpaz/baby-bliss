@@ -141,6 +141,10 @@
     width: 10rem;
   }
 
+  .pricing-inner {
+    gap: var(--spacing-600);
+  }
+
   .gift-wrapper {
     max-height: none;
     margin-bottom: 0;
@@ -384,6 +388,10 @@
     --max-width: 100%;
   }
 
+  .recommended {
+    max-width: 85%;
+  }
+
   .pricing-wrapper--narrow {
     grid-template-columns: 1fr;
     gap: var(--spacing-700);
@@ -395,9 +403,11 @@
   }
 
   .pricing-inner {
-    padding-block: var(--spacing-500);
-    padding-inline: var(--spacing-500);
-    gap: var(--spacing-400);
+    padding-inline: var(--spacing-300);
+  }
+
+  .pricing-feature span {
+    font-size: var(--fs-400);
   }
 
   .pricing-price {
@@ -461,6 +471,10 @@
 
   .heading-3 {
     font-size: var(--fs-550);
+  }
+
+  .recommended {
+    max-width: 90%;
   }
 
   .footer {
@@ -573,6 +587,10 @@
   .class-details {
     /* margin-inline: auto; */
     max-width: 100%;
+  }
+
+  .recommended {
+    max-width: 90%;
   }
 
   .pricing-wrapper--narrow .pricing {

@@ -19,13 +19,13 @@
 
 .main-nav {
   margin-right: auto;
-  margin-left: var(--spacing-900);
+  margin-left: var(--spacing-600);
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  gap: var(--spacing-600);
+  gap: var(--spacing-550);
 }
 
 .nav-link:link,
