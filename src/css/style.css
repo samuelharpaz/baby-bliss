@@ -567,21 +567,11 @@
 .gift-wrapper {
   max-width: 75rem;
   margin-inline: auto;
-  max-height: 42.25rem;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-
-  margin-bottom: var(--spacing-600);
 }
 
 .gift-img {
-  object-fit: cover;
-  transition: transform 0.6s ease-in-out;
-}
-
-.gift-img:hover {
-  transform: translateY(-50%);
+  border-radius: var(--border-radius);
+  pointer-events: none;
 }
 
 /* CLASSES FAQ SECTION */
@@ -755,4 +745,8 @@ visible */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-200);
+}
+
+#in-person-info {
+  scroll-margin-top: 20svh;
 }
