@@ -286,8 +286,7 @@
   font-size: var(--fs-400);
 }
 
-.contact-phone--mobile:link,
-.contact-phone--mobile:link {
+.contact-phone--mobile {
   display: none;
 }
 
