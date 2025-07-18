@@ -85,3 +85,13 @@
   justify-content: center;
   gap: var(--spacing-150);
 }
+
+.copyright-link:link,
+.copyright-link:visited {
+  transition: all 0.2s;
+}
+
+.copyright-link:hover,
+.copyright-link:focus-visible {
+  color: var(--clr-accent-highlight-400);
+}
