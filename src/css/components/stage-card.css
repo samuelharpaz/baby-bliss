@@ -14,7 +14,7 @@
   justify-content: center;
 
   box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .stage-card:hover,

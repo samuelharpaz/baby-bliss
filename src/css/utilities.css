@@ -163,6 +163,9 @@
 .pt-400 {
   padding-top: var(--spacing-400);
 }
+.pt-700 {
+  padding-top: var(--spacing-700);
+}
 
 .pb-800 {
   padding-bottom: var(--spacing-800);
