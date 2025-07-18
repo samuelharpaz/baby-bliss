@@ -1,6 +1,6 @@
 .scroll-top {
   padding: var(--spacing-150);
-  background-color: rgba(64, 90, 109, 0.8);
+  background-color: rgba(64, 90, 109, 0.9);
   position: fixed;
   bottom: var(--spacing-300);
   right: var(--spacing-300);

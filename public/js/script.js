@@ -270,3 +270,16 @@ if (inPersonRadios) {
     });
   });
 }
+
+///////////////////////////////////////
+// PREVENT RIGHT-CLICK
+
+const noRightClickElements = document.querySelectorAll('.no-right-click');
+
+if (noRightClickElements) {
+  noRightClickElements.forEach(el => {
+    el.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  });
+}
