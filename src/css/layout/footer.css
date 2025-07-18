@@ -58,6 +58,11 @@
   margin-bottom: var(--spacing-100);
 }
 
+.footer-phone--mobile:link,
+.footer-phone--mobile:visited {
+  display: none;
+}
+
 .footer-email {
   margin-bottom: var(--spacing-300);
 }

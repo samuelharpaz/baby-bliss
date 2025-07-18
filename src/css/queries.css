@@ -477,6 +477,15 @@
     max-width: 90%;
   }
 
+  .contact-phone--non-mobile {
+    display: none;
+  }
+
+  .contact-phone--mobile:link,
+  .contact-phone--mobile:link {
+    display: block;
+  }
+
   .footer {
     padding-top: var(--spacing-700);
   }
@@ -498,9 +507,19 @@
     grid-column: 2;
   }
 
-  .footer-wrapper a:link {
+  .footer-wrapper .footer-logo-link:link,
+  .footer-wrapper .footer-logo-link:visited {
     grid-column: 1 / -1;
     justify-self: center;
+  }
+
+  .footer-phone--non-mobile {
+    display: none;
+  }
+
+  .footer-phone--mobile:link,
+  .footer-phone--mobile:visited {
+    display: block;
   }
 
   .heading-naava {

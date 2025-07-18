@@ -286,6 +286,11 @@
   font-size: var(--fs-400);
 }
 
+.contact-phone--mobile:link,
+.contact-phone--mobile:link {
+  display: none;
+}
+
 .contact-social-links {
   list-style: none;
   display: flex;
