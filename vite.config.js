@@ -17,8 +17,6 @@ export default {
         faves: './favorite-products.html',
         contact: './contact.html',
         workshopForm: './sleep-workshop.html',
-        // homeForm: './in-person-workshop.html',
-        // scheduleCallForm: './schedule-call.html',
         followUpForm: './follow-up-session.html',
         fatherSupportForm: './father-support.html',
         babyBlissBracelet: './baby-bliss-bracelet.html',
