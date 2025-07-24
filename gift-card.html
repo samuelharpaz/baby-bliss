@@ -13,15 +13,38 @@
       {{> header}} {{> scroll-to-top}}
 
       <main>
-        <section class="section-walkthrough bg-primary-100 text-primary-700 padding-block-lg">
+        <div class="container">
+          <h1 class="heading-primary">Gift Card</h1>
+        </div>
+        <section class="section-gift pt-400 mb-9">
+          <div class="container">
+            <img
+              srcset="
+                /images/bb-gift-card-2x.jpg 1500w,
+                /images/bb-gift-card-1x.jpg  750w,
+                /images/bb-gift-card-sm.jpg  405w
+              "
+              sizes="
+              (max-width: 37.5em) 95vw,
+              (max-width: 46em) 72vw,
+              (max-width: 75em) 675px,
+              750px"
+              alt="gift card"
+              class="gift-img no-right-click"
+              src="/images/bb-gift-card-2x.jpg"
+            />
+          </div>
+        </section>
+
+        <section class="section-walkthrough text-primary-400 pb-800">
           <div class="container">
             <div class="text-container">
-              <h2 class="heading-secondary">Baby Bliss Gift Cards</h2>
+              <h2 class="heading-secondary">Purchase a Gift Card</h2>
               <p>
                 We offer a beautifully designed virtual gift card which upon purchase will be sent to the recipient via
                 email.
               </p>
-              <p class="mb-4">The process is just a few simple steps:</p>
+              <p class="mb-4">The process is quick and easy&mdash;just a few simple steps:</p>
               <ol class="walkthrough-list mb-4">
                 <li>
                   Fill out the form below, including your own information as well as the full name and email address of
@@ -30,26 +53,29 @@
                 <li>
                   <p>
                     Along with the regular workshop ($350) which is typically given via phone or video call and can be
-                    taken anywhere,
+                    taken anywhere, we also offer
                     <strong
-                      >in-person sessions ($450) are offered in select areas in Los Angeles, California, as scheduling
+                      >in-person sessions ($450) in select areas in Los Angeles, California, as scheduling
                       permits</strong
                     >
                     (typically within 90035 and 90036 zip codes).
                   </p>
                   <p>
-                    If the recipient is located within this vicinity and you would like to request in-person sessions,
-                    simply indicate this in the comments box at the bottom of the form along with the recipient's full
-                    address. We will check if it's possible to accommodate this request, and of course get back to you.
+                    If the recipient is located in or near this area and you would like to request in-person sessions,
+                    simply select the option in the form below, and fill out the recipient's street address and zip code
+                    in Los Angeles. We will check if it's possible to accommodate this request, and of course get back
+                    to you.
                   </p>
                 </li>
                 <li>
-                  We will send you a payment link to purchase the gift card. Upon payment completion, the gift card will
-                  be sent to the recipient's email as a gift in your name, along with all the information they need to
-                  set up the workshop!
+                  We will review the information with you for accuracy. Upon payment completion, the gift card will be
+                  sent to the recipient's email as a gift in your name, along with a brief introduction to our program
+                  and all the information they need to set up the workshop!
                 </li>
               </ol>
-              <p>For any questions or assistance, contact me at (323)840-4802 (phone, text, or WhatsApp).</p>
+              <p>
+                For any questions, contact me at (323)840-4802 (phone, text, or WhatsApp) and I'll be happy to assist.
+              </p>
             </div>
           </div>
         </section>
@@ -58,15 +84,15 @@
           <div class="container">
             <div class="form-container">
               <h2 class="heading-secondary mb-6">Gift Card Order Form</h2>
-              <form action="https://api.web3forms.com/submit" method="post" class="form-gift-card">
+              <form action="https://api.web3forms.com/submit" method="post" class="form form-gift-card">
                 {{> email-key}}
 
                 <input type="hidden" id="subject" name="subject" value="New message" />
                 <input type="hidden" name="from_name" value="Gift Card Order Form" />
                 {{> redirect}}
 
-                <h3 class="mb-4">Your information</h3>
-                <div class="form-group-container mb-6">
+                <div class="form-group-container mb-2">
+                  <h3>Your information</h3>
                   <div class="form-group">
                     <label for="name" class="required">Your name</label>
                     <input type="text" id="name" placeholder="Full Name" name="name" required />
@@ -81,8 +107,8 @@
                   </div>
                 </div>
 
-                <h3 class="mb-4">Recipient information</h3>
-                <div class="form-group-container mb-6">
+                <div class="form-group-container">
+                  <h3>Recipient information</h3>
                   <div class="form-group">
                     <label for="recipient-name" class="required">Recipient name</label>
                     <input
@@ -105,13 +131,50 @@
                   </div>
                 </div>
 
-                <div class="form-group mb-6">
+                <div class="form-group" id="in-person-select">
+                  <legend for="day" class="mb-2">Would you like to request the in-person option?</legend>
+                  <div class="radio-group-wrapper">
+                    <div class="radio-group">
+                      <input type="radio" id="yes" name="in-person" value="yes" />
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div class="radio-group">
+                      <input type="radio" id="no" name="in-person" value="no" checked />
+                      <label for="no">No</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="address-group form-group-container hidden">
+                  <div class="form-group">
+                    <label for="address" class="required">Recipient Street Address</label>
+                    <input
+                      type="text"
+                      placeholder="123 N La Brea Ave."
+                      id="address"
+                      name="address"
+                      class="local-address"
+                    />
+                  </div>
+                  <div class="city-state-wrapper">
+                    <div class="form-group">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" value="Los Angeles" readonly tabindex="-1" />
+                    </div>
+                    <div class="form-group">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" value="California" readonly tabindex="-1" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="zip" class="required">Zip</label>
+                    <input type="text" id="zip" maxlength="5" class="max-length-input" size="5" name="zip" />
+                  </div>
+                </div>
+
+                <div class="form-group mb-2">
                   <label for="message">Additional comments:</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="e.g. I would like to request the in-person workshop"
-                  ></textarea>
+                  <textarea id="message" name="message"></textarea>
                 </div>
 
                 <!-- honeypot -->

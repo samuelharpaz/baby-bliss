@@ -6,7 +6,7 @@
 .header-wrapper {
   display: flex;
   align-items: center;
-  gap: var(--spacing-600);
+  gap: var(--spacing-300);
 }
 
 .header-wrapper > * {
@@ -25,7 +25,7 @@
 .nav-list {
   list-style: none;
   display: flex;
-  gap: var(--spacing-550);
+  gap: var(--spacing-500);
 }
 
 .nav-link:link,
