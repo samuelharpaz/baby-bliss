@@ -154,9 +154,10 @@
     justify-content: space-between;
   }
 
-  .mobile-nav-btn {
-    display: block;
-    /* z-index: 99999; */
+  @supports selector(:popover-open) {
+    .mobile-nav-btn {
+      display: block;
+    }
   }
 
   .main-nav {
