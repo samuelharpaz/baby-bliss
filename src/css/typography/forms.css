@@ -47,10 +47,10 @@ legend.required::after {
   content: '*';
   font-size: var(--fs-300);
   position: absolute;
-  top: -8px;
   display: inline-block;
 
-  margin-left: 0.2rem;
+  margin-left: 0.4rem;
+  margin-top: -2px;
 }
 
 input,
