@@ -12,11 +12,25 @@
     <div class="page-wrapper">
       {{> header }} {{> scroll-to-top}}
 
-      <main class="bg-primary-200">
-        <section class="section-form text-primary-700 padding-block-lg">
+      <main>
+        <section class="section-walkthrough bg-primary-200 text-primary-700 pt-800">
+          <div class="container">
+            <div class="text-container">
+              <h2 class="heading-secondary">Follow-up Session</h2>
+              <p>
+                A follow-up session is a one-on-one phone or video consultation for returning clients who’ve already
+                completed the Baby Sleep Workshop. Any time you're looking for a personalized check-in or navigating a
+                new developmental stage, I can tailor my support to your baby's current needs. I'll help you adjust to
+                schedule changes, work through regressions, or simply provide a bit of extra guidance as things evolve.
+              </p>
+              <p>Simply complete the form below and I'll be in touch to set up a session!</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-form text-primary-700 bg-primary-200 padding-block-lg">
           <div class="container">
             <div class="form-container">
-              <h2 class="heading-secondary mb-6">Follow-up Session</h2>
+              <!-- <h2 class="heading-secondary mb-6">Follow-up Form</h2> -->
               <form action="https://api.web3forms.com/submit" method="post" class="form">
                 {{> email-key }}
 
