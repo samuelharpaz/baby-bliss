@@ -12,11 +12,25 @@
     <div class="page-wrapper">
       {{> header}} {{> scroll-to-top}}
 
-      <main class="bg-primary-200">
-        <section class="section-form text-primary-700 padding-block-lg">
+      <main>
+        <section class="section-walkthrough bg-primary-200 text-primary-700 pt-800">
+          <div class="container">
+            <div class="text-container">
+              <h2 class="heading-secondary mb-2">Father's Support</h2>
+              <h3 class="mb-5">$175</h3>
+              <p>
+                The Father's Support session is a one-on-one phone or video call designed for couples who have already
+                completed the main Baby Sleep Workshop. This session offers practical guidance tailored to
+                fathers&mdash;helping them better understand their role in baby care, support their partner, and feel
+                more confident and connected throughout the sleep training process.
+              </p>
+              <p>Fill out the form below and I'll be in touch to set up a time that works!</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-form text-primary-700 bg-primary-200 padding-block-lg">
           <div class="container">
             <div class="form-container">
-              <h2 class="heading-secondary mb-6">Father Support</h2>
               <form action="https://api.web3forms.com/submit" method="post" class="form">
                 {{> email-key }}
 
