@@ -264,11 +264,6 @@
     right: 8rem;
   }
 
-  .recommended {
-    width: var(--component-width-constrain);
-    margin-inline: auto;
-  }
-
   .classes-faq-question::after {
     width: 6rem;
   }
@@ -344,6 +339,10 @@
     right: 6rem;
   }
 
+  .pricing-wrapper {
+    gap: var(--spacing-500);
+  }
+
   .pricing-wrapper--narrow {
     gap: var(--spacing-600);
   }
@@ -378,6 +377,7 @@
 
   .pricing-wrapper {
     --max-width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .recommended {

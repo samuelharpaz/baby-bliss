@@ -415,6 +415,9 @@
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-800);
 
   scroll-margin-top: 10svh;
 }
@@ -427,7 +430,6 @@
 }
 
 .pricing {
-  /* width: 66.6%; */
   border-radius: var(--border-radius);
   overflow: hidden;
   display: flex;
@@ -445,7 +447,7 @@
 }
 
 .recommended {
-  max-width: 48rem;
+  /* max-width: 48rem; */
   margin-inline: auto;
   box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.2);
 }

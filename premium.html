@@ -16,13 +16,13 @@
         <section class="section-form bg-primary-200 text-primary-700 padding-block-lg">
           <div class="container">
             <div class="form-container">
-              <h2 class="heading-secondary mb-2">Book Your Workshop</h2>
-              <h3 class="mb-5">$350 ($450 in-person)</h3>
+              <h2 class="heading-secondary mb-2">Premium Bundle</h2>
+              <h3 class="mb-5">$1000</h3>
               <form action="https://api.web3forms.com/submit" method="post" class="form form-workshop">
                 {{> email-key}}
 
                 <input type="hidden" id="subject" name="subject" value="New message" />
-                <input type="hidden" name="from_name" value="Sleep Workshop Request Form" />
+                <input type="hidden" name="from_name" value="Premium Bundle Request Form" />
                 {{> redirect}}
 
                 <div class="form-group">
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="class-select">Which class are you interested in?</label>
+                  <label for="class-select">Which class are you interested in starting with?</label>
                   <select class="select" name="class-select" id="class-select">
                     <option value="prenatal">Prenatal Bonding and Sleep Foundations</option>
                     <option value="newborn">Newborn Sleep & Care (0&ndash;4 months)</option>
@@ -199,26 +199,6 @@
                 </div>
 
                 <div class="form-group">
-                  <legend for="day" class="mb-2">
-                    Would you like to extend your support to a total of 4 weeks after the workshop? (<a
-                      class="link-underline"
-                      href="#extended-support-info"
-                      >see details</a
-                    >)
-                  </legend>
-                  <div class="radio-group-wrapper">
-                    <div class="radio-group">
-                      <input type="radio" id="yes" name="extended-support" value="yes" />
-                      <label for="yes">Upgrade my plan (+$125 for extended support)</label>
-                    </div>
-                    <div class="radio-group">
-                      <input type="radio" id="no" name="extended-support" value="no" />
-                      <label for="no">No, thanks</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
                   <label for="message" class="fw-regular mb-1"
                     >Share a quick summary of any specific challenges you've been facing so we can best tailor your
                     solution:</label
@@ -230,7 +210,7 @@
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
                 <div class="form-footer">
-                  <button type="submit" class="btn mb-5">Book your workshop</button>
+                  <button type="submit" class="btn mb-5">Book your premium bundle</button>
                   <p class="form-group-message"><span>*</span> indicates required field</p>
                 </div>
               </form>
@@ -240,7 +220,7 @@
 
         <section class="section-classes-faq bg-primary-100 padding-block-lg">
           <div class="container">
-            <h2 class="heading-secondary text-center text-primary-700 mb-6">Booking FAQ</h2>
+            <h2 class="heading-secondary text-center text-primary-700 mb-6">Premium Bundle FAQ</h2>
             <div class="text-container">
               <ul class="classes-faq">
                 <li>
@@ -252,26 +232,6 @@
                     you're located in the vicinity but outside this area, you're still welcome to
                     <a href="#in-person-select" class="link-underline">request the in-person option</a>&mdash;we'll
                     check your location and let you know if we can make it work.
-                  </p>
-                </li>
-                <li>
-                  <p class="classes-faq-question">
-                    What sort of follow-up support can I expect after taking the workshop?
-                  </p>
-                  <p class="classes-faq-answer">
-                    The workshop includes one week of follow-up support (two weeks for a first baby) via text or
-                    WhatsApp, with an optional upgrade for extended support. While I'm not available 24/7, I do my
-                    utmost to respond within 24 hours. Please note that support is unavailable from Friday afternoon
-                    through Saturday evening.
-                  </p>
-                </li>
-                <li>
-                  <p class="classes-faq-question" id="extended-support-info">
-                    What is included in the extended support option?
-                  </p>
-                  <p class="classes-faq-answer">
-                    The extended support upgrades the post-workshop text/WhatsApp support from the standard 1 week to 4
-                    weeks. For first baby or twins, support is extended from 2 weeks to 5 weeks.
                   </p>
                 </li>
               </ul>
