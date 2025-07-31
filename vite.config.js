@@ -25,7 +25,8 @@ export default {
         submissionSuccess: './submission-success.html',
         disclaimer: './disclaimer.html',
         terms: './terms.html',
-        privacy: './privacy.html'
+        privacy: './privacy.html',
+        premium: './premium.html'
       }
     }
   }
