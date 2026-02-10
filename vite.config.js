@@ -18,15 +18,13 @@ export default {
         contact: './contact.html',
         workshopForm: './sleep-workshop.html',
         followUpForm: './follow-up-session.html',
-        fatherSupportForm: './father-support.html',
         babyBlissBracelet: './baby-bliss-bracelet.html',
         giftCard: './gift-card.html',
         custom404: './404.html',
         submissionSuccess: './submission-success.html',
         disclaimer: './disclaimer.html',
         terms: './terms.html',
-        privacy: './privacy.html',
-        premium: './premium.html'
+        privacy: './privacy.html'
       }
     }
   }
