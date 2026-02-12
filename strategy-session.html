@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{> setup }}
+
+    <title>Strategy Session - Baby Bliss by Naava</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {{> header }} {{> scroll-to-top}}
+
+      <main>
+        <section class="section-walkthrough bg-primary-200 text-primary-700 pt-800">
+          <div class="container">
+            <div class="text-container">
+              <h2 class="heading-secondary mb-2">Personal Strategy Session</h2>
+              <h3 class="mb-5">$200</h3>
+              <p>
+                A Personal Strategy Session is a one-on-one phone consultation (up to 90 minutes) to quickly develop a
+                targeted plan of action to your specific needs.
+              </p>
+              <p>Simply complete the form below and I'll be in touch to set up a time that works!</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-form text-primary-700 bg-primary-200 padding-block-lg">
+          <div class="container">
+            <div class="form-container">
+              <!-- <h2 class="heading-secondary mb-6">Follow-up Form</h2> -->
+              <form action="https://api.web3forms.com/submit" method="post" class="form">
+                {{> email-key }}
+
+                <input type="hidden" id="subject" name="subject" value="New message" />
+                <input type="hidden" name="from_name" value="Strategy Session Request Form" />
+                {{> redirect}}
+
+                <div class="form-group">
+                  <label for="name" class="required">Name</label>
+                  <input type="text" id="name" placeholder="Full Name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="required">Phone number</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="required">Email</label>
+                  <input type="email" id="email" placeholder="email@gmail.com" name="email" required />
+                </div>
+                <div class="form-group">
+                  <legend for="day" class="required mb-2">Preferred call day(s) (please select one or more):</legend>
+                  <div class="checkbox-group-wrapper">
+                    <div class="check-group">
+                      <input type="checkbox" id="sunday" name="day" value="sunday" />
+                      <label for="sunday">Sunday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="monday" name="day" value="monday" />
+                      <label for="monday">Monday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="tuesday" name="day" value="tuesday" />
+                      <label for="tuesday">Tuesday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="wednesday" name="day" value="wednesday" />
+                      <label for="wednesday">Wednesday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="thursday" name="day" value="thursday" />
+                      <label for="thursday">Thursday</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="friday" name="day" value="friday" />
+                      <label for="friday">Friday</label>
+                    </div>
+                    <p class="form-group-message mt-1">
+                      Choose a few days that work for a quick phone call to set up a session.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <legend for="day" class="mb-2">Preferred call time(s):</legend>
+                  <div class="checkbox-group-wrapper">
+                    <div class="check-group">
+                      <input type="checkbox" id="mornings" name="time" value="mornings" />
+                      <label for="mornings">Mornings (9am&ndash;12 noon)</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="afternoons" name="time" value="afternoons" />
+                      <label for="afternoons">Afternoons (12 noon&ndash;3:30pm)</label>
+                    </div>
+                    <div class="check-group">
+                      <input type="checkbox" id="evenings" name="time" value="evenings" />
+                      <label for="evenings">8:30pm&ndash;10pm</label>
+                    </div>
+                    <p class="form-group-message mt-1"><strong>Note: All times are Pacific Standard Time</strong></p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="fw-regular mb-1"
+                    >Share a quick summary of any specific challenges you've been facing so we can best tailor your
+                    solution:</label
+                  >
+                  <textarea id="message" name="message"></textarea>
+                </div>
+
+                <!-- honeypot -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+                <div class="form-footer">
+                  <button class="mb-5">Book your session</button>
+                  <p class="form-group-message"><span>*</span> indicates required field</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-classes-faq bg-primary-100 padding-block-lg">
+          <div class="container">
+            <h2 class="heading-secondary text-center text-primary-700 mb-6">Personal Strategy Session FAQ</h2>
+            <div class="text-container">
+              <ul class="classes-faq">
+                <li>
+                  <p class="classes-faq-question" id="in-person-info">
+                    What's the difference between the Personal Strategy Session and the full workshop?
+                  </p>
+                  <p class="classes-faq-answer">
+                    The Personal Strategy Session is a personalized consultation to get you up and running with a clear
+                    set of actionable steps you can begin implementing in the most efficient way possible. While it's
+                    not meant to replace the workshop, where I teach you my method in a step-by-step and comprehensive
+                    way, it's a more affordable option that can help effectively target the issues you're dealing with
+                    most.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {{> footer }}
+    </div>
+  </body>
+</html>

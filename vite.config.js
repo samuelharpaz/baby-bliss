@@ -17,7 +17,7 @@ export default {
         faves: './favorite-products.html',
         contact: './contact.html',
         workshopForm: './sleep-workshop.html',
-        followUpForm: './follow-up-session.html',
+        strategy: './strategy-session.html',
         babyBlissBracelet: './baby-bliss-bracelet.html',
         giftCard: './gift-card.html',
         custom404: './404.html',

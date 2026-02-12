@@ -64,3 +64,8 @@ I share practical techniques with couples, such as calming a fussy baby and usin
 Creating a flexible yet predictable routine is incredibly beneficial on multiple levels. Babies quickly learn what to expect, which fosters a sense of security. Mothers gain clarity on when they will feed their baby and when they can carve out much-needed “me time” for activities like cooking, shopping, or even enjoying a relaxing shower.
 
 Having a structure can also reduce issues like colic or periods of distress for the baby, allowing everyone to enjoy restful sleep. And for nursing mothers, establishing a routine helps regulate their bodies, leading to greater comfort.
+
+# Follow-up Session
+
+Ideal for schedule changes, regressions, developmental transitions, or a personalized
+check-in

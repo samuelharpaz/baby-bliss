@@ -366,7 +366,7 @@
 .class-list-title {
   font-size: var(--fs-400);
   font-family: var(--ff-heading);
-  text-transform: ;
+  text-transform:;
 }
 
 .class-details {
@@ -449,7 +449,7 @@
 .recommended {
   /* max-width: 48rem; */
   margin-inline: auto;
-  box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.6rem 2.2rem rgba(0, 0, 0, 0.18);
 }
 
 .recommended:hover,
