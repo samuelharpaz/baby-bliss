@@ -14,3 +14,9 @@ a:visited {
 .link-underline:visited {
   text-decoration: underline;
 }
+
+.link-text:link,
+.link-text:visited {
+  color: var(--clr-accent-highlight-800);
+  font-weight: var(--fw-bold);
+}
